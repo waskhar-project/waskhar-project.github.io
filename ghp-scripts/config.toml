@@ -93,3 +93,6 @@ weight = 4
   [[params.social]]
     name = "email"
     link = "waskhar-project@intix.info"  # no need for "mailto:" in the head
+  [[params.social]]
+    name = "twitter"
+    link = "https://twitter.com/chilcano" 
