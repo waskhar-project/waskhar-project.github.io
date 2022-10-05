@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Waskhar Project</title>
-    <link>https://waskhar-project.github.io/</link>
-    <description>Recent content on Waskhar Project</description>
+    <title>Blockchain on Waskhar Project</title>
+    <link>https://waskhar-project.github.io/tags/blockchain/</link>
+    <description>Recent content in Blockchain on Waskhar Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Sat, 01 Oct 2022 18:49:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 18:49:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>El Proyecto Waskhar</title>
       <link>https://waskhar-project.github.io/2022/10/01/el-proyecto-waskhar/</link>
