@@ -1,11 +1,12 @@
 ---
 title: "El Proyecto Waskhar"
 date: 2022-10-01T18:49:40+02:00
+type: post
 draft: false
 tags: [Blockchain, Traceability, Amazon Forest]
 url: /2022/10/01/el-proyecto-waskhar
 aliases: 
-   - /post/2022/10/01/the-waskhar-project
+   - /2022/10/01/the-waskhar-project
    - /el-proyecto-waskhar
 ---
 
