@@ -6,6 +6,7 @@ tags: [Blockchain, Traceability, Amazon Forest]
 url: /2022/10/01/el-proyecto-waskhar
 aliases: 
    - /post/2022/10/01/the-waskhar-project
+   - /el-proyecto-waskhar
 ---
 
 # El Proyecto Waskhar
