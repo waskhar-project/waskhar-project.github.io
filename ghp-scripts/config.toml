@@ -28,7 +28,7 @@ weight = 3
 
 [[menu.main]]
 name = "The Project"
-url = "/about"
+url = "/el-proyecto-waskhar"
 weight = 4
 
 [markup]
