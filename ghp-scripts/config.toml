@@ -32,9 +32,9 @@ weight = 4
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 3                    # 3 levels only
+    endLevel = 3                    # ends h3 
     ordered = false
-    startLevel = 2
+    startLevel = 2                  # starts h2
   [markup.highlight]
     codeFences = true
     guessSyntax = false
@@ -56,7 +56,7 @@ weight = 4
   # Home page settings
   description = "Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain."
   #mainSection = "posts"                              # your main section
-  showAllPostsOnHomePage = true                       # true: default
+  showAllPostsOnHomePage = false                       # true: default
   postsOnHomePage = 5                                 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true                                 # show tags overview by default.
   showProjectsList = false                            # show projects list by default (if projects data file exists).
