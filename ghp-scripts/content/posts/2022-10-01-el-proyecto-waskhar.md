@@ -1,8 +1,8 @@
 ---
 title: "El Proyecto Waskhar"
 date: 2022-10-01T18:49:40+02:00
-type: posts
 draft: false
+type: post
 layout: single_simple
 tags: [Amazon Forest]
 categories: [Blockchain, Holism]
