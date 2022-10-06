@@ -22,8 +22,8 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Taxonomy"
+url = "/taxonomy"
 weight = 3
 
 [[menu.main]]
@@ -58,8 +58,8 @@ weight = 4
   description = "Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = true # default
-  postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = false # show tags overview by default.
+  postsOnHomePage = 5                     # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = true                     # show tags overview by default.
   showProjectsList = false # show projects list by default (if projects data file exists).
   projectsUrl = "https://github.com/waskhar-project" # title link for projects list
 
@@ -71,7 +71,7 @@ weight = 4
   showReadTime = true # default
 
   [params.comments]
-    enabled = true # default
+    enabled = false                      # true: default
     engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
     [params.comments.utterances]
       repo = "<github_username>/<github_reponame>"

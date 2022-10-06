@@ -4,7 +4,8 @@ date: 2022-10-01T18:49:40+02:00
 type: posts
 draft: false
 layout: single_simple
-tags: [Blockchain, Traceability, Amazon Forest]
+tags: [Amazon Forest]
+categories: [Blockchain, Holism]
 url: /2022/10/01/el-proyecto-waskhar
 aliases: 
    - /2022/10/01/the-waskhar-project
