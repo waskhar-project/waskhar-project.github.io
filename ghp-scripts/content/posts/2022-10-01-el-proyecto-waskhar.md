@@ -1,7 +1,7 @@
 ---
 title: "El Proyecto Waskhar"
 date: 2022-10-01T18:49:40+02:00
-type: post
+type: posts
 draft: false
 layout: single_simple
 tags: [Blockchain, Traceability, Amazon Forest]
