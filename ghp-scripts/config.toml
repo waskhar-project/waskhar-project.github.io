@@ -66,11 +66,11 @@ weight = 4
   dateFormat = "2006-01-02" # default
 
   # Post page settings
-  show_updated = true # default
-  showReadTime = true # default
+  show_updated = true                                 # default
+  showReadTime = false                                # default
 
   [params.comments]
-    enabled = false                      # true: default
+    enabled = false                                   # true: default
     engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
     [params.comments.utterances]
       repo = "<github_username>/<github_reponame>"

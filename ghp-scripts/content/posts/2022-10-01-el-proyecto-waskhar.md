@@ -13,9 +13,7 @@ aliases:
    - /about
 ---
 
-# El Proyecto Waskhar
-
-> “Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain.”
+> "Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain."
 
 ![](/media/assets/post20221001/waskhar-logo-3-knots-color.png)
 _Palabra Quechua que significa 'Cadena o cuerda o soga dura, difícil de romper.'_
@@ -29,11 +27,11 @@ Con esta propuesta, esperamos desincentivar la tala ilegal de madera, pues se po
 
 ## 2. Contexto del Proyecto
 
-### 2.1. Obsolescencia
+__I. Obsolescencia__
 
 Uno de los problemas es la individualidad y heterogeneidad de las iniciativas TIC que son emprendidas y usadas de manera aislada.
 
-### 2.2. MC-SNIFFS (Módulo de Control del Sistema Nacional de Información Forestal y de Fauna Silvestre)
+__II. MC-SNIFFS (Módulo de Control del Sistema Nacional de Información Forestal y de Fauna Silvestre)__
 
 El SNIFFS, una iniciativa liderada por SERFOR iniciada hace 2 años, se alza como la solución de control y trazabilidad a lo largo del ciclo de vida de los recursos naturales forestales y de fauna silvestre. El MC-SNIFFS se rige por la Ley Forestal y de Fauna Silvestre, sus reglamentos, el Decreto Legislativo 1220 y 1319, la Resolución de Dirección Ejecutiva 104-2017 y 044-2020 del SERFOR.
 
@@ -47,17 +45,17 @@ En el rubro de recursos naturales maderables, el MC-SNIFFS provee 3 tipos de apl
 
 Cabe mencionar que blockchain no es mencionado en ninguna documentación técnica, manual de aplicación ni presentaciones realizadas hasta la fecha.
 
-### 2.3. Trazabilidad sin blockchain
+__III. Trazabilidad sin blockchain__
 
 En simples palabras, blockchain es un libro digital contable y distribuído, usado para garantizar la autenticidad, integridad y no repudio de las transacciones. Es usado exitosamente en los llamados Neo-Banks, que permiten construir sistemas financieros en paralelo al sistema financiero tradicional. Tecnológicamente, blockchain puede ser utilizado en cualquier sector, no sólo en el financiero.
 
 Aunque las aplicaciones o sistemas informáticos registran toda su actividad en archivos de eventos (logs) y en base de datos, esta información puede ser manipulada o no estar disponible, lo que cuando sucede la convierte en una fuente de datos de poca confianza.
 
-### 2.4. Blockchain como una “caja negra”
+__IV. Blockchain como una "caja negra"__
 
-Por su naturaleza, introducir blockchain en el ecosistema gestionado por MC-SNIFFS podría traer incertidumbre, desorden y resistencia. En estas circunstancias, la estrategía de adopción de blockchain debería propender hacia la transparencia en la implementación. En otras palabras, debemos ver el uso de blockchain como una “caja negra” (“adaptador”, “plugin” o “conector”) que nos permita usarla e integrarla de manera amigable en cualquier punto que nuestro proceso lo requiera.
+Por su naturaleza, introducir blockchain en el ecosistema gestionado por MC-SNIFFS podría traer incertidumbre, desorden y resistencia. En estas circunstancias, la estrategía de adopción de blockchain debería propender hacia la transparencia en la implementación. En otras palabras, debemos ver el uso de blockchain como una "caja negra" ("adaptador", "plugin" o "conector") que nos permita usarla e integrarla de manera amigable en cualquier punto que nuestro proceso lo requiera.
 
-### 2.5. Dónde y cómo empezar con blockchain: Partida del nacimiento del árbol
+__V. Dónde y cómo empezar con blockchain: Partida del nacimiento del árbol__
 
 Blockchain es una tecnología que suma valor a aplicaciones o sistemas informáticos existentes, no viene a reemplazar ninguna base de datos o aplicativo. Sin embargo, ¿cómo empezamos?. La respuesta viene de las Buenas Prácticas de Arquitectura Empresarial ([Enterprise Integration Patterns, EIP](https://www.enterpriseintegrationpatterns.com/toc.html)), según las cuales empezar con blockchain significa:
 * Elaborar un adaptador y la lógica de blockchain que implemente tantos patrones de integración como se haya identificado en cada interacción de interés.
@@ -65,27 +63,27 @@ Blockchain es una tecnología que suma valor a aplicaciones o sistemas informát
 
 ## 3. Solución propuesta
 
-Como la integración del adaptador blockchain se hace sobre una transacción cuando dos componentes intercambian información, lo recomendable es hacerla en puntos o etapas iniciales del proceso de ciclo de vida de la madera. Consecuentemente, usaremos blockchain, preferentemente, en algún punto del proceso de la “partida de nacimiento” del árbol. 
+Como la integración del adaptador blockchain se hace sobre una transacción cuando dos componentes intercambian información, lo recomendable es hacerla en puntos o etapas iniciales del proceso de ciclo de vida de la madera. Consecuentemente, usaremos blockchain, preferentemente, en algún punto del proceso de la "partida de nacimiento" del árbol. 
 
-### 3.1. Arquitectura de alto nivel
+__3.1. Arquitectura de alto nivel__
 
 ![](/media/assets/post20221001/waskhar-arch-01.png)
 _Diagrama general de una implementación blockchain_
 
 Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.
 
-#### Descripción de las capas y componentes
+__Descripción de las capas y componentes:__
 
 ##### I. Blockchain Ledger Layer
 
 * __Consensus Module__: Confirma la autenticidad y la adecuada ejecución de las operaciones dentro de la red de blockchain. Es responsable de la validación y la verificación de las transacciones y el acuerdo general sobre el estado actual del Ledger entre los diferentes nodos que participan en la red de blockchain.
-* __Transactions Handling Module__: Es el componente más importante de cualquier plataforma blockchain. Su principal objetivo es almacenar los datos de la transacción y todos sus eventos relevantes en el “Ledger” (Registro Contable). Cuando una transacción está siendo enviada a la red blockchain, toda esta información es registrada en el Ledger. Dicha información incluirá un identificador de la transacción, identificador de quién origina y quién recibe, la hora de la transacción (timestamp), el valor de la transacción, etc.
+* __Transactions Handling Module__: Es el componente más importante de cualquier plataforma blockchain. Su principal objetivo es almacenar los datos de la transacción y todos sus eventos relevantes en el "Ledger" (Registro Contable). Cuando una transacción está siendo enviada a la red blockchain, toda esta información es registrada en el Ledger. Dicha información incluirá un identificador de la transacción, identificador de quién origina y quién recibe, la hora de la transacción (timestamp), el valor de la transacción, etc.
 
 ##### II. Middleware Layer
 
 * __Upload Handler Module__: Regula la gestión (entrada, descarga, registro, emisión) de documentos (facturas, guías de transporte, planes operativos, etc.) asociados con cada etapa del proceso. Cuando un nuevo documento entra al proceso, ciertas operaciones necesitan ser seguidas para manejarlas a través de la plataforma de blockchain, para ello este módulo creará un Smart Contract y lo desplegará a través del Smart Contract Manager Module. Después de eso, el documento quedará almacenado en el correspondiente CMS (Gestor Documental).
 * __Data Orchestrator Module__: Es responsable de almacenar eficientemente un documento de manera segura y distribuída, con baja latencia.
-* __Smart Contract Manager Module__: En este módulo, muchas operaciones viajan a través de sus funcionalidades y mecanismos de aprobación. La creación automática, despliegue y disparos de Smart Contracts constituyen su principal responsabilidad. Él interactúa con el Upload Handler y el Transactions Handling. Cuando un actor, por ejemplo un concesionario o un comprador, carga una guía de transporte, ya sea “requerida” o “entregada”, el Smart Contract Manager procesaría las entradas respectivas recolectadas desde Upload Handler Module.
+* __Smart Contract Manager Module__: En este módulo, muchas operaciones viajan a través de sus funcionalidades y mecanismos de aprobación. La creación automática, despliegue y disparos de Smart Contracts constituyen su principal responsabilidad. Él interactúa con el Upload Handler y el Transactions Handling. Cuando un actor, por ejemplo un concesionario o un comprador, carga una guía de transporte, ya sea "requerida" o "entregada", el Smart Contract Manager procesaría las entradas respectivas recolectadas desde Upload Handler Module.
 * __Application Transaction Handler__: Este módulo regula las transacciones que se gestionan dentro de la plataforma blockchain. Es responsable de todas las interacciones entre el Application Layer y el Middleware Layer. En el Smart Contract Manager, cada funcionalidad relacionada con el smart contract crea una nueva transacción que está controlada por el Transactions Handling y es reenviada a la Blockchain Ledger Layer.
 
 ##### III. Application Layer
@@ -100,7 +98,7 @@ Representa el proceso seguido por todos los actores involucrados en la cadena de
 ![](/media/assets/post20221001/waskhar-arch-02.png)
 _Diagrama de transición entre capas_
 
-### 3.2. Arquitectura de bajo nivel
+__3.2. Arquitectura de bajo nivel__
 
 Representaremos las especificaciones técnicas del adaptador blockchain, el middleware y cómo éste se integrará con la capa de aplicaciones de negocio (SNIFFS y otros).
 
@@ -111,7 +109,7 @@ _Diagrama de interacciones_
 ![](/media/assets/post20221001/waskhar-arch-04.png)
 _Descripción de las interacciones_
 
-### 3.3. Especificaciones técnicas del Middleware Layer y del Blockchain Adapter
+__3.3. Especificaciones técnicas del Middleware Layer y del Blockchain Adapter__
 
 La escalabilidad de la solución propuesta se alcanzará por los siguientes motivos:
 * __Middleware__: Es la mejor forma de integrar sistemas heterogéneos (Databosque, MC-SNIFFS, etc.) con el Blockchain Ledger. En este caso, el Middleware traducirá los eventos originados en las aplicaciones de negocio (ERP, CRM, BPM, etc.) en llamadas que Blockchain Ledger entienda. Como Middleware podemos emplear un ESB (Enterprise Service Bus), BPM (Business Process Manager), EDA (Event-Driven Architecture) tool o usar un AS (Application Server) con la capacidad de integrar y orquestar asíncronamente aplicaciones heterogéneas.
@@ -149,8 +147,8 @@ Los entregables y recursos necesarios para diseñar, implementar y soportar esta
 2. El diseño e implementación de las operaciones de blockchain como un Adaptador o Plugin facilitará la integración, escalabilidad, repetibilidad y encapsula la complejidad de blockchain en la cadena de suministro.
 3. Blockchain mejora la trazabilidad debido a que usa algoritmos criptográficos para garantizar la integridad, autenticidad y no repudio de la información. Así tenemos:
   * _Confianza_. Un proceso automatizado que usa elementos de control, de seguridad, de auditabilidad y de trazabilidad que proporciona blockchain inspirará mayor confianza que uno que no está automatizado ni usa blockchain.
-  * _Seguridad de Activos_. Los recursos maderables en procesos automatizados que usan blockchain representan activos. Un recurso natural maderable tendrá una representación unívoca como si fuese “dinero digital”. Gracias a Blockchain, esos activos serán cuantificables como recursos valiosos fungibles que estarán registrados en un registro contable (ledger). Así, un concesionario podrá valuar los recursos maderables en su equivalente digital en Blockchain, siendo incluso tratados como recursos financieros y potencialmente usados como garantía bancaria.
-  * _Antifraude_. Todos los recursos maderables y sus  operaciones (eventos y transacciones) quedan siempre registrados en el registro contable (ledger) que provee la plataforma blockchain. Con ello, no será posible “blanquear” recursos maderables.
+  * _Seguridad de Activos_. Los recursos maderables en procesos automatizados que usan blockchain representan activos. Un recurso natural maderable tendrá una representación unívoca como si fuese "dinero digital". Gracias a Blockchain, esos activos serán cuantificables como recursos valiosos fungibles que estarán registrados en un registro contable (ledger). Así, un concesionario podrá valuar los recursos maderables en su equivalente digital en Blockchain, siendo incluso tratados como recursos financieros y potencialmente usados como garantía bancaria.
+  * _Antifraude_. Todos los recursos maderables y sus  operaciones (eventos y transacciones) quedan siempre registrados en el registro contable (ledger) que provee la plataforma blockchain. Con ello, no será posible "blanquear" recursos maderables.
 4. Esta solución abre puertas a nuevas oportunidades como:
-  * _Minting_: podemos crear activos financieros a partir de recursos forestales, por ejemplo, crear la “moneda árbol“ y usarlo como recurso financiero.
+  * _Minting_: podemos crear activos financieros a partir de recursos forestales, por ejemplo, crear la "moneda árbol" y usarlo como recurso financiero.
   * _Bonos de carbono_: a partir de la cuantificación de los árboles podemos inferir cuánto de gases de efecto invernadero (GEI) son capturados y percibir algún beneficio.
