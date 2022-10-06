@@ -5,7 +5,7 @@ title = "Waskhar Project"
 theme = "hugo-theme-cactus"
 copyright = "You" # cactus will use title if copyright is not set
 #disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
-# googleAnalytics = "UA-1234-5"
+#googleAnalytics = "UA-1234-5"
 
 
 # summaryLength = 2
@@ -27,8 +27,8 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "The Project"
-url = "/el-proyecto-waskhar"
+name = "About"
+url = "/about"
 weight = 4
 
 [markup]
@@ -57,10 +57,10 @@ weight = 4
   # Home page settings
   description = "Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain."
   mainSection = "posts" # your main section
-  showAllPostsOnHomePage = false # default
+  showAllPostsOnHomePage = true # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = true # show tags overview by default.
-  showProjectsList = true # show projects list by default (if projects data file exists).
+  tagsOverview = false # show tags overview by default.
+  showProjectsList = false # show projects list by default (if projects data file exists).
   projectsUrl = "https://github.com/waskhar-project" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
