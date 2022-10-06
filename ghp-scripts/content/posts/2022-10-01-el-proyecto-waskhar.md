@@ -67,10 +67,10 @@ Como la integración del adaptador blockchain se hace sobre una transacción cua
 
 __3.1. Arquitectura de alto nivel__
 
+Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.
+
 ![](/media/assets/post20221001/waskhar-arch-01.png)
 _Diagrama general de una implementación blockchain_
-
-Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.
 
 __Descripción de las capas y componentes:__
 
