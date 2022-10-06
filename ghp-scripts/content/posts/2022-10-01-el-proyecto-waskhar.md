@@ -70,28 +70,28 @@ __3.1. Arquitectura de alto nivel__
 Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.
 
 ![](/media/assets/post20221001/waskhar-arch-01.png)
-_Diagrama general de una implementación blockchain_
+_Arquitectura de alto nivel de la solución propuesta_
 
-__Descripción de las capas y componentes:__
+A continuación describiremos cada una de las capas y sus componentes presentes en la arquitectura:   
 
-##### I. Blockchain Ledger Layer
+__I. Blockchain Ledger Layer__
 
 * __Consensus Module__: Confirma la autenticidad y la adecuada ejecución de las operaciones dentro de la red de blockchain. Es responsable de la validación y la verificación de las transacciones y el acuerdo general sobre el estado actual del Ledger entre los diferentes nodos que participan en la red de blockchain.
 * __Transactions Handling Module__: Es el componente más importante de cualquier plataforma blockchain. Su principal objetivo es almacenar los datos de la transacción y todos sus eventos relevantes en el "Ledger" (Registro Contable). Cuando una transacción está siendo enviada a la red blockchain, toda esta información es registrada en el Ledger. Dicha información incluirá un identificador de la transacción, identificador de quién origina y quién recibe, la hora de la transacción (timestamp), el valor de la transacción, etc.
 
-##### II. Middleware Layer
+__II. Middleware Layer__
 
 * __Upload Handler Module__: Regula la gestión (entrada, descarga, registro, emisión) de documentos (facturas, guías de transporte, planes operativos, etc.) asociados con cada etapa del proceso. Cuando un nuevo documento entra al proceso, ciertas operaciones necesitan ser seguidas para manejarlas a través de la plataforma de blockchain, para ello este módulo creará un Smart Contract y lo desplegará a través del Smart Contract Manager Module. Después de eso, el documento quedará almacenado en el correspondiente CMS (Gestor Documental).
 * __Data Orchestrator Module__: Es responsable de almacenar eficientemente un documento de manera segura y distribuída, con baja latencia.
 * __Smart Contract Manager Module__: En este módulo, muchas operaciones viajan a través de sus funcionalidades y mecanismos de aprobación. La creación automática, despliegue y disparos de Smart Contracts constituyen su principal responsabilidad. Él interactúa con el Upload Handler y el Transactions Handling. Cuando un actor, por ejemplo un concesionario o un comprador, carga una guía de transporte, ya sea "requerida" o "entregada", el Smart Contract Manager procesaría las entradas respectivas recolectadas desde Upload Handler Module.
 * __Application Transaction Handler__: Este módulo regula las transacciones que se gestionan dentro de la plataforma blockchain. Es responsable de todas las interacciones entre el Application Layer y el Middleware Layer. En el Smart Contract Manager, cada funcionalidad relacionada con el smart contract crea una nueva transacción que está controlada por el Transactions Handling y es reenviada a la Blockchain Ledger Layer.
 
-##### III. Application Layer
+__III. Application Layer__
 
 * __Application Server (Implementación de la Cadena de Suministro)__: Implementa la lógica de negocio. Es el equivalente digital del proceso físico. Si el proceso físico no está automatizado, es este componente el que debería implementarlo. Usará una base de datos; además, podría trabajar conjuntamente con el ERP y/o CMS existentes. En esta capa se ubicará la aplicación actualmente en uso y que se integrará con blockchain.
 * __ERP y CMS__: Podrían ser aplicaciones existentes, puede ser que no existan, tengan otro nombre o simplemente son implementaciones Ad-hoc y/o están distribuidas.
 
-##### IV. Proceso Físico (Cadena de Suministro)
+__IV. Proceso Físico (Cadena de Suministro)__
 
 Representa el proceso seguido por todos los actores involucrados en la cadena de suministro de los recursos maderables. En el largo plazo, el éxito de este proyecto radica en llevar todas las etapas identificadas en el proceso al mundo digital; concretamente, implementar en el Application Layer dicho proceso de inicio a fin.
 
@@ -111,7 +111,7 @@ _Descripción de las interacciones_
 
 __3.3. Especificaciones técnicas del Middleware Layer y del Blockchain Adapter__
 
-La escalabilidad de la solución propuesta se alcanzará por los siguientes motivos:
+La escalabilidad de la solución propuesta se alcanzará por los siguientes motivos: 
 * __Middleware__: Es la mejor forma de integrar sistemas heterogéneos (Databosque, MC-SNIFFS, etc.) con el Blockchain Ledger. En este caso, el Middleware traducirá los eventos originados en las aplicaciones de negocio (ERP, CRM, BPM, etc.) en llamadas que Blockchain Ledger entienda. Como Middleware podemos emplear un ESB (Enterprise Service Bus), BPM (Business Process Manager), EDA (Event-Driven Architecture) tool o usar un AS (Application Server) con la capacidad de integrar y orquestar asíncronamente aplicaciones heterogéneas.
 * __Adapter__: Una forma de encapsular y ocultar la complejidad de las operaciones que hay que realizar en el Blockchain Ledger. En este caso, el Blockchain Adapter expondrá dichas operaciones a través de API RESTful seguro. El Blockchain Adapter puede ser usado tantas veces como actividades en los procesos de negocio requieran registrar información en Blockchain Ledger, inclusive si las actividades identificadas en los procesos pertenecen a aplicaciones totalmente diferentes y distribuidas geográficamente. 
 * __Disponibilidad__: El Middleware hospedará una o muchas instancias del Blockchain Adapter y que el Middleware debe ser accesible de manera segura a todas las aplicaciones que quieran interactuar con el Blockchain Ledger. 
