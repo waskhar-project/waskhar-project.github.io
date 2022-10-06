@@ -165,11 +165,7 @@ Palabra Quechua que significa &lsquo;Cadena o cuerda o soga dura, difícil de ro
   <ul>
     <li><a href="#1-resumen-ejecutivo">1. Resumen ejecutivo</a></li>
     <li><a href="#2-contexto-del-proyecto">2. Contexto del Proyecto</a></li>
-    <li><a href="#3-solución-propuesta">3. Solución propuesta</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#3-solución-propuesta">3. Solución propuesta</a></li>
     <li><a href="#4-objetivos-del-proyecto">4. Objetivos del Proyecto</a></li>
     <li><a href="#5-entregables-y-recursos">5. Entregables y recursos</a></li>
     <li><a href="#6-conclusiones">6. Conclusiones</a></li>
@@ -272,26 +268,26 @@ Con esta propuesta, esperamos desincentivar la tala ilegal de madera, pues se po
 <p><strong>3.1. Arquitectura de alto nivel</strong></p>
 <p>Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.</p>
 <p><img src="/media/assets/post20221001/waskhar-arch-01.png" alt="">
-<em>Diagrama general de una implementación blockchain</em></p>
-<p><strong>Descripción de las capas y componentes:</strong></p>
-<h5 id="i-blockchain-ledger-layer">I. Blockchain Ledger Layer</h5>
+<em>Arquitectura de alto nivel de la solución propuesta</em></p>
+<p>A continuación describiremos cada una de las capas y sus componentes presentes en la arquitectura:</p>
+<p><strong>I. Blockchain Ledger Layer</strong></p>
 <ul>
 <li><strong>Consensus Module</strong>: Confirma la autenticidad y la adecuada ejecución de las operaciones dentro de la red de blockchain. Es responsable de la validación y la verificación de las transacciones y el acuerdo general sobre el estado actual del Ledger entre los diferentes nodos que participan en la red de blockchain.</li>
 <li><strong>Transactions Handling Module</strong>: Es el componente más importante de cualquier plataforma blockchain. Su principal objetivo es almacenar los datos de la transacción y todos sus eventos relevantes en el &ldquo;Ledger&rdquo; (Registro Contable). Cuando una transacción está siendo enviada a la red blockchain, toda esta información es registrada en el Ledger. Dicha información incluirá un identificador de la transacción, identificador de quién origina y quién recibe, la hora de la transacción (timestamp), el valor de la transacción, etc.</li>
 </ul>
-<h5 id="ii-middleware-layer">II. Middleware Layer</h5>
+<p><strong>II. Middleware Layer</strong></p>
 <ul>
 <li><strong>Upload Handler Module</strong>: Regula la gestión (entrada, descarga, registro, emisión) de documentos (facturas, guías de transporte, planes operativos, etc.) asociados con cada etapa del proceso. Cuando un nuevo documento entra al proceso, ciertas operaciones necesitan ser seguidas para manejarlas a través de la plataforma de blockchain, para ello este módulo creará un Smart Contract y lo desplegará a través del Smart Contract Manager Module. Después de eso, el documento quedará almacenado en el correspondiente CMS (Gestor Documental).</li>
 <li><strong>Data Orchestrator Module</strong>: Es responsable de almacenar eficientemente un documento de manera segura y distribuída, con baja latencia.</li>
 <li><strong>Smart Contract Manager Module</strong>: En este módulo, muchas operaciones viajan a través de sus funcionalidades y mecanismos de aprobación. La creación automática, despliegue y disparos de Smart Contracts constituyen su principal responsabilidad. Él interactúa con el Upload Handler y el Transactions Handling. Cuando un actor, por ejemplo un concesionario o un comprador, carga una guía de transporte, ya sea &ldquo;requerida&rdquo; o &ldquo;entregada&rdquo;, el Smart Contract Manager procesaría las entradas respectivas recolectadas desde Upload Handler Module.</li>
 <li><strong>Application Transaction Handler</strong>: Este módulo regula las transacciones que se gestionan dentro de la plataforma blockchain. Es responsable de todas las interacciones entre el Application Layer y el Middleware Layer. En el Smart Contract Manager, cada funcionalidad relacionada con el smart contract crea una nueva transacción que está controlada por el Transactions Handling y es reenviada a la Blockchain Ledger Layer.</li>
 </ul>
-<h5 id="iii-application-layer">III. Application Layer</h5>
+<p><strong>III. Application Layer</strong></p>
 <ul>
 <li><strong>Application Server (Implementación de la Cadena de Suministro)</strong>: Implementa la lógica de negocio. Es el equivalente digital del proceso físico. Si el proceso físico no está automatizado, es este componente el que debería implementarlo. Usará una base de datos; además, podría trabajar conjuntamente con el ERP y/o CMS existentes. En esta capa se ubicará la aplicación actualmente en uso y que se integrará con blockchain.</li>
 <li><strong>ERP y CMS</strong>: Podrían ser aplicaciones existentes, puede ser que no existan, tengan otro nombre o simplemente son implementaciones Ad-hoc y/o están distribuidas.</li>
 </ul>
-<h5 id="iv-proceso-físico-cadena-de-suministro">IV. Proceso Físico (Cadena de Suministro)</h5>
+<p><strong>IV. Proceso Físico (Cadena de Suministro)</strong></p>
 <p>Representa el proceso seguido por todos los actores involucrados en la cadena de suministro de los recursos maderables. En el largo plazo, el éxito de este proyecto radica en llevar todas las etapas identificadas en el proceso al mundo digital; concretamente, implementar en el Application Layer dicho proceso de inicio a fin.</p>
 <p><img src="/media/assets/post20221001/waskhar-arch-02.png" alt="">
 <em>Diagrama de transición entre capas</em></p>
@@ -411,11 +407,7 @@ Interoperabilidad con Blockchain: La interoperabilidad en el lado de las aplicac
   <ul>
     <li><a href="#1-resumen-ejecutivo">1. Resumen ejecutivo</a></li>
     <li><a href="#2-contexto-del-proyecto">2. Contexto del Proyecto</a></li>
-    <li><a href="#3-solución-propuesta">3. Solución propuesta</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#3-solución-propuesta">3. Solución propuesta</a></li>
     <li><a href="#4-objetivos-del-proyecto">4. Objetivos del Proyecto</a></li>
     <li><a href="#5-entregables-y-recursos">5. Entregables y recursos</a></li>
     <li><a href="#6-conclusiones">6. Conclusiones</a></li>
