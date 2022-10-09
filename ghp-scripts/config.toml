@@ -58,17 +58,17 @@ weight = 4
   mainSection = "posts"                               # your main section - link to <site>/posts
   mainSectionTitle = "Articles"
   showAllPostsOnHomePage = false                       # true: default
-  postsOnHomePage = 5                                 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = false                                 # true:show tags overview by default.
-  showProjectsList = false                            # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/waskhar-project"  # title link for projects list
+  postsOnHomePage = 10                                 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = true                                  # true:show tags overview by default.
+  showProjectsList = true                              # show projects list by default (if projects data file exists).
+  projectsUrl = "https://github.com/waskhar-project"   # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
 
   # Post page settings
-  show_updated = true                                 # default
-  showReadTime = false                                # default
+  show_updated = true                                 # true: default
+  showReadTime = false                                # true: default
 
   [params.comments]
     enabled = false                                   # true: default
