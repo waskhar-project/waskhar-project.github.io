@@ -9,7 +9,6 @@ categories: [Blockchain, Holism]
 url: /2022/10/01/el-proyecto-waskhar
 aliases: 
    - /2022/10/01/the-waskhar-project
-   - /el-proyecto-waskhar
    - /about
 ---
 
