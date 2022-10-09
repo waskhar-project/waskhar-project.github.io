@@ -1,14 +1,14 @@
 ---
 title: "El Proyecto Waskhar"
-date: 2022-10-01T18:49:40+02:00
+date: 2022-08-01T18:49:40+02:00
 draft: false
 #type: post
 #layout: single_simple
 tags: [Amazon Forest]
 categories: [Blockchain, Holism]
-url: /2022/10/01/el-proyecto-waskhar
+url: /2022/08/01/el-proyecto-waskhar
 aliases: 
-   - /2022/10/01/the-waskhar-project
+   - /2022/08/01/the-waskhar-project
    - /about
 ---
 

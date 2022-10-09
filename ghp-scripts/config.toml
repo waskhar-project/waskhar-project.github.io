@@ -72,7 +72,7 @@ weight = 4
 
   [params.comments]
     enabled = false                                   # true: default
-    engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
+    engine = "cactus_comments"                        # only disqus, utterances, and cactus_comments is supported
     [params.comments.utterances]
       repo = "<github_username>/<github_reponame>"
       label = "hugo-site-name" # you can use however you want to label your name in your repo's issues
