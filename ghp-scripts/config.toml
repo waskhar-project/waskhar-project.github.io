@@ -17,7 +17,7 @@ weight = 1
 
 [[menu.main]]
 name = "Articles"
-url = "/posts"
+url = "/articles"
 weight = 2
 
 [[menu.main]]
@@ -55,7 +55,7 @@ weight = 4
 
   # Home page settings
   description = "Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain."
-  mainSection = "posts"                               # your main section - link to <site>/posts
+  mainSection = "articles"                               # your main section - link to <site>/posts
   mainSectionTitle = "Articles"
   showAllPostsOnHomePage = false                       # true: default
   postsOnHomePage = 10                                 # this option will be ignored if showAllPostsOnHomePage is set to true
