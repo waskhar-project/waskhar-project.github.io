@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Mon, 01 Aug 2022 18:49:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 18:51:44 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taxonomy</title>
       <link>https://waskhar-project.github.io/taxonomy/</link>
@@ -25,6 +25,16 @@
       <guid>https://waskhar-project.github.io/about/</guid>
       <description>Sobre el Proyecto &amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
 La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
+    </item>
+    
+    <item>
+      <title>Evaluacion de herramientas BPM Open Source</title>
+      <link>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</link>
+      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</guid>
+      <description>Qué es BPM De acuerdo a Wikipedia, BPM (Business Process Management o Gestión de Procesos de Negocio) es una disciplina de gestión que tiene por objetivo mejorar el desempeño y la optimización de los procesos de una organización. Esto se alcanza siguiendo las etapas: (1) diseñar, (2) modelar, (3) organizar, (4) documentar y (5) optimizar de manera contínua.
+BPMS y BPMN BPMS son las siglas de Business Process Management System, y es una herramienta que automatiza el BPM y asiste en todas sus etapas.</description>
     </item>
     
     <item>

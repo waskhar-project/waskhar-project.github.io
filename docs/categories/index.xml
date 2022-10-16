@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Mon, 01 Aug 2022 18:49:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 18:51:44 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BPM</title>
+      <link>https://waskhar-project.github.io/categories/bpm/</link>
+      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/categories/bpm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://waskhar-project.github.io/categories/open-source/</link>
+      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/categories/open-source/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Blockchain</title>
       <link>https://waskhar-project.github.io/categories/blockchain/</link>
