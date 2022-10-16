@@ -17,7 +17,6 @@
               {{ if gt $index 0 }} {{ print "·" }} {{ end }}
               <a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $value | urlize }}">{{ $value }}</a>
               {{ end }}
-              {{ print "·" }} 
           </div>
           {{ end }}
           {{ if gt .Params.tags 0 }}
