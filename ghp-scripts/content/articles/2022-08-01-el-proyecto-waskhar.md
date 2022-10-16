@@ -3,13 +3,12 @@ title: "El Proyecto Waskhar"
 date: 2022-08-01T18:49:40+02:00
 draft: false
 #type: post
-#layout: single_simple
-tags: [Amazon Forest]
-categories: [Blockchain, Holism]
+layout: single_article
+#tags: [Amazon Forest]
+categories: [Blockchain, Traceability, Supply Chain]
 url: /2022/08/01/el-proyecto-waskhar
 aliases: 
    - /2022/08/01/the-waskhar-project
-   - /about
 ---
 
 > "Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain."

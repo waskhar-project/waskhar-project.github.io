@@ -6,6 +6,7 @@ theme = "hugo-theme-cactus"
 copyright = "Waskhar Project"                   # cactus will use title if copyright is not set
 #disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
 #googleAnalytics = "UA-1234-5"
+paginate = 12
 # summaryLength = 2
 
 # Main menu which appears below site header.
@@ -51,7 +52,7 @@ weight = 4
   colortheme = "classic"               # dark, light, white, or classic
   rss = false                          # generate rss feed. default value is false
   #googleAnalyticsAsync = true          # use asynchronous tracking. Synchronous tracking by default
-  showAllPostsArchive = true           # false: default
+  #showAllPostsArchive = true           # false: default
 
   # Home page settings
   description = "Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain."
@@ -96,3 +97,9 @@ weight = 4
   [[params.social]]
     name = "twitter"
     link = "https://twitter.com/chilcano" 
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+  preserveTaxonomyNames = true
