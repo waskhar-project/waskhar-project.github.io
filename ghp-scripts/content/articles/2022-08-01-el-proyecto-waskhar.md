@@ -4,7 +4,7 @@ date: 2022-08-01T18:49:40+02:00
 draft: false
 #type: post
 layout: single_article
-categories: [Blockchain, Traceability, Supply Chain]
+categories: [Blockchain, Traceability]
 url: /2022/08/01/el-proyecto-waskhar
 aliases: 
    - /2022/08/01/the-waskhar-project
