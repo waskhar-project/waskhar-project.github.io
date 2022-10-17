@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I | Waskhar Project</title>
+  <link rel = 'canonical' href = 'https://waskhar-project.github.io/2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1/'>
+  <meta name="description" content="Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I" />
+<meta property="og:description" content="1. Objetivo Realizaremos un análisis al detalle de los procesos de explotación de la madera elaborados y diseñados con la herramienta BPM que nos permitirá identificar las actividades o procedimientos críticos y relacionarla con la tecnología Blockchain para garantizar la trazabilidad.
+2. Abreviaturas MINAGRI : Ministerio de Agricultura y Riego SERFOR : Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM : Business Process Management en inglés o Gestión de Procesos de Negocio GTF : Guia de Transporte Forestal ARFFS : Autoridad Regional Forestal y de Fauna Silvestre ARF : Autoridad Regional Forestal PO : Plan Operativo PMFI : Plan de Manejo Forestal Intermedio DEMA : Lineamientos para la elaboración de la Declaración de Manejo CTP : Centros de Transformación Primaria RUC : Registro Único de Contribuyentes 3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://waskhar-project.github.io/2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-08-03T10:50:40+02:00" />
+<meta property="article:modified_time" content="2022-08-03T10:50:40+02:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I"/>
+<meta name="twitter:description" content="1. Objetivo Realizaremos un análisis al detalle de los procesos de explotación de la madera elaborados y diseñados con la herramienta BPM que nos permitirá identificar las actividades o procedimientos críticos y relacionarla con la tecnología Blockchain para garantizar la trazabilidad.
+2. Abreviaturas MINAGRI : Ministerio de Agricultura y Riego SERFOR : Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM : Business Process Management en inglés o Gestión de Procesos de Negocio GTF : Guia de Transporte Forestal ARFFS : Autoridad Regional Forestal y de Fauna Silvestre ARF : Autoridad Regional Forestal PO : Plan Operativo PMFI : Plan de Manejo Forestal Intermedio DEMA : Lineamientos para la elaboración de la Declaración de Manejo CTP : Centros de Transformación Primaria RUC : Registro Único de Contribuyentes 3."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://waskhar-project.github.io/css/styles.4c2b9aa1d874d6766f554b2d404e8fd62ab4761f51ee9b3f358d12e81e7fa43a1b4378db995bc1926bbe5ed98c060be5e7bd4f2470504cf94f22b4b3a74e62b6.css" integrity="sha512-TCuaodh01nZvVUstQE6P1iq0dh9R7ps/NY0S6B5/pDobQ3jbmVvBkmu&#43;XtmMBgvl571PJHBQTPlPIrSzp05itg=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://waskhar-project.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+    <header id="header">
+  <a href="https://waskhar-project.github.io/">
+  
+    <div id="logo" style="background-image: url(https://waskhar-project.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Waskhar Project</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/articles">Articles</a></li>
+      
+        <li><a href="/taxonomy">Taxonomy</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  
+  <h1 class="posttitle" itemprop="name headline"> Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I </h1>
+
+  <ul class="post-list">  
+      <li class="post-item">
+        <div class="meta">
+          <time datetime="2022-08-03 10:50:40 &#43;0200 CEST" itemprop="datePublished">2022-08-03</time>
+        </div>
+        <span>    
+          
+          
+          <div class="article-category">
+              
+              
+              <a class="category-link" href="/categories/bpmn">BPMN</a>
+              
+               · 
+              <a class="category-link" href="/categories/process-modeling">Process Modeling</a>
+              
+          </div>
+          
+          
+  
+        </span>
+      </li>  
+    </ul>
+
+  <div class="content" itemprop="articleBody">
+  
+    <h2 id="1-objetivo">1. Objetivo</h2>
+<p>Realizaremos un análisis al detalle de los procesos de explotación de la madera elaborados y  diseñados con la herramienta BPM que nos permitirá identificar las actividades o procedimientos críticos y relacionarla con la tecnología Blockchain para garantizar la trazabilidad.</p>
+<h2 id="2-abreviaturas">2. Abreviaturas</h2>
+<ul>
+<li>MINAGRI : Ministerio de Agricultura y Riego</li>
+<li>SERFOR : Servicio Nacional Forestal y de Fauna Silvestre</li>
+<li>MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM : Business Process Management en inglés o Gestión de Procesos de Negocio GTF : Guia de Transporte Forestal</li>
+<li>ARFFS : Autoridad Regional Forestal y de Fauna Silvestre</li>
+<li>ARF : Autoridad Regional Forestal</li>
+<li>PO : Plan Operativo</li>
+<li>PMFI : Plan de Manejo Forestal Intermedio</li>
+<li>DEMA : Lineamientos para la elaboración de la Declaración de Manejo CTP : Centros de Transformación Primaria</li>
+<li>RUC : Registro Único de Contribuyentes</li>
+</ul>
+<h2 id="3-situación-actual">3. Situación actual</h2>
+<p>La trazabilidad de los recursos forestales maderables en nuestro país está regulada y aprobada  mediante Resolución de Dirección Ejecutiva N.230–2019–MINAGRI–SERFOR-DE y utiliza el  Módulo de Control del Sistema Nacional de Información Forestal y de Fauna Silvestre (MC SNIFFS), un subsistema para la gestión de información de títulos habilitantes que conlleve a la verificación del origen legal de la madera aprovechada, el módulo se encuentra a cargo del  SERFOR. Esta se compone por 3 submódulos: forestal maderable, forestal no maderable y de  fauna silvestre. El MC-SNIFFS se sustenta normativamente en la Ley Forestal y de Fauna  Silvestre, sus reglamentos, el Decreto Legislativo 1220 y 1319, la Resolución de Dirección  Ejecutiva 104-2017 y 044-2020 del SERFOR. Asimismo, utiliza aplicativos que son herramienta  de ayuda al registro ordenado de las operaciones de aprovechamiento, ingreso, transformación  y salida de la madera y sus productos de los aserraderos o plantas de transformación, así como  también del control de volúmenes y saldos.
+Existe avances en el sector público y que está normado para lo cual es importante contemplar  esta experiencia y regulación vigente que con el soporte de la tecnología debe ser mejorado y  optimizado para evitar la tala ilegal y corrupción.
+Asimismo, existen otras iniciativas privadas relacionadas al tema lo cual nos permitió tener  presente los inconvenientes que tuvieron y que afecta al desarrollo de estos tipos de proyectos  tecnológicos que tienen mucho impacto.</p>
+<h2 id="4-problema">4. Problema</h2>
+<p>Los principales problemas detectados fueron:</p>
+<ul>
+<li>El MC-SNIFFS está aún en proceso de construcción e implementación y están tomando  acciones para abordar los temas de trazabilidad de la madera.</li>
+<li>Obtener el acceso a los aplicativos que están vigentes se rigen con una serie de requisitos que toma mucho tiempo y era complicado de cumplir.</li>
+<li>Durante el diagnóstico de los procesos de la trazabilidad se observó que no se utiliza  una herramienta de BPM muy necesario para complementar con otras tecnologías.</li>
+</ul>
+<h2 id="5-acciones">5. Acciones</h2>
+<p>Las principales acciones adoptadas para mitigar los problemas fueron:</p>
+<ul>
+<li>Se envió una solicitud a mesa de partes de SERFOR para una reunión con un  Especialista Forestal de la Dirección de Control de la Gestión del Patrimonio Forestal y  de Fauna Silvestre la cual nos sugirió usar la información en la web relacionada al  MANUAL DE USUARIO Sistema de Emisión y Registro de Guías de Transporte.</li>
+<li>Aprendizaje de la herramienta BPM Processmaker y diagnóstico de los procesos. La  tecnología Blockchain se complementa bien con el BPM (gestión de procesos  empresariales) pues ha demostrado eficacia y fiabilidad al crear aplicaciones. Asimismo,  BPM y su desarrollo de aplicaciones basadas en Blockchain puede resultar  enormemente eficaz pues si se trata de evitar la corrupción e ilegalidad.</li>
+<li>Análisis y diseño de los procesos con sus respectivos screen simulando el  funcionamiento del manual de usuario utilizado como caso.</li>
+</ul>
+<h2 id="6-desarrollo">6. Desarrollo</h2>
+<p>Constituye la puesta en ejecución de las acciones.
+Los instrumentos aprobados por el SERFOR que brindan la trazabilidad de los recursos  forestales maderables a lo largo de la cadena productiva son:</p>
+<ul>
+<li>a. Plan de manejo forestal</li>
+<li>b. Libro de operaciones de los títulos habilitantes para aprovechamiento forestal maderable.</li>
+<li>c. Libro de operaciones de centros de transformación primaria de productos y subproductos  forestales maderables</li>
+<li>d. Guia de transporte forestal</li>
+<li>e. Aplicativo informático para el registro de información y reportes del Libro de operaciones  de los títulos habilitantes para aprovechamiento forestal maderable.</li>
+<li>f. Aplicativo informático para el registro de información y reportes del Libro de operaciones  de centros de transformación primaria de productos y subproductos forestales  maderables.</li>
+<li>g. Aplicativos informáticos para la emisión y registro de GTF de títulos habilitantes y centros  de transformación primaria.</li>
+</ul>
+<p>Utilizando el software Processmaker, información disponible del MC-SNIFF, entrevistas a los especialistas forestales, etc se desarrollaron 6 procesos para conocer el funcionamiento de las  actividades de la trazabilidad de la madera en un entorno de modelo de negocio BPM la cual se  ve reflejada en el siguiente gráfico:</p>
+<ul>
+<li>a. Proceso 1: A1-Cadena Productiva-Madera-ctc</li>
+<li>b. Proceso 2: A2-Documentos de Gestión-Autoridad-ctc</li>
+<li>c. Proceso 3: A3-Título Habilitante-ctc</li>
+<li>d. Proceso 4: A4-Aserraderos y Depósitos-ctc</li>
+<li>e. Proceso 5: G1-Registro Guía de Transporte Forestal-Estado Natural</li>
+<li>f. Proceso 6: G2-Registro Guía de Transporte Forestal-Producto Transformado</li>
+</ul>
+<blockquote>
+<p>El modelado de cada uno de los procesos y su análisis se verá en la segunda parte del artículo.<br>
+<a href="/2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1">Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte II</a></p>
+</blockquote>
+
+  
+  </div>
+</article>
+
+
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Waskhar Project 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/articles">Articles</a></li>
+         
+        <li><a href="/taxonomy">Taxonomy</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+</html>
