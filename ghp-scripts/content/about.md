@@ -13,4 +13,4 @@ La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. L
 
 Frente a ello, las autoridades emplean diversas iniciativas TICs, aplicaciones y base de datos obsoletas. Este proyecto usará la tecnología blockchain para mejorar la capacidad del Estado a obtener información confiable en tiempo real de los recursos maderables: concesionados, en almacenes, en el campo, en tránsito y en el destino final. Esto facilitaría que los agentes en los puntos de control de la cadena de suministro generen registros que, al ser almacenados en una cadena de blockchain, serían únicos e inmutables. 
 
-[Si quieres conocer más sobre el Proyecto, sigue este enlace.](/2022/08/01/el-proyecto-waskhar)
+> [Si quieres conocer más sobre el Proyecto, sigue este enlace.](/2022/08/01/el-proyecto-waskhar)

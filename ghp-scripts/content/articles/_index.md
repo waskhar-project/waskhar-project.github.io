@@ -1,4 +1,4 @@
 ---
-title: List of Articles
+title: Lista de Artículos
 headless: true
 ---
