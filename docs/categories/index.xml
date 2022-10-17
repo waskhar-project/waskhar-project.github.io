@@ -18,11 +18,20 @@
     </item>
     
     <item>
-      <title>Open Source</title>
-      <link>https://waskhar-project.github.io/categories/open-source/</link>
+      <title>DApp</title>
+      <link>https://waskhar-project.github.io/categories/dapp/</link>
       <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
       
-      <guid>https://waskhar-project.github.io/categories/open-source/</guid>
+      <guid>https://waskhar-project.github.io/categories/dapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web3</title>
+      <link>https://waskhar-project.github.io/categories/web3/</link>
+      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/categories/web3/</guid>
       <description></description>
     </item>
     
