@@ -2,7 +2,7 @@
 title: "Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I"
 date: 2022-08-03T10:50:40+02:00
 draft: false
-#type: post
+authors: ["Carlos Ticla"]
 layout: single_article
 categories: [BPMN, Process Modeling]
 url: /2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1
@@ -41,12 +41,12 @@ Los principales problemas detectados fueron:
 
 Las principales acciones adoptadas para mitigar los problemas fueron: 
 * Se envió una solicitud a mesa de partes de SERFOR para una reunión con un  Especialista Forestal de la Dirección de Control de la Gestión del Patrimonio Forestal y  de Fauna Silvestre la cual nos sugirió usar la información en la web relacionada al  MANUAL DE USUARIO Sistema de Emisión y Registro de Guías de Transporte. 
-* Aprendizaje de la herramienta BPM Processmaker y diagnóstico de los procesos. La  tecnología Blockchain se complementa bien con el BPM (gestión de procesos  empresariales) pues ha demostrado eficacia y fiabilidad al crear aplicaciones. Asimismo,  BPM y su desarrollo de aplicaciones basadas en Blockchain puede resultar  enormemente eficaz pues si se trata de evitar la corrupción e ilegalidad. 
+* Aprendizaje de la herramienta BPM ProcessMaker y diagnóstico de los procesos. La  tecnología Blockchain se complementa bien con el BPM (gestión de procesos  empresariales) pues ha demostrado eficacia y fiabilidad al crear aplicaciones. Asimismo,  BPM y su desarrollo de aplicaciones basadas en Blockchain puede resultar  enormemente eficaz pues si se trata de evitar la corrupción e ilegalidad. 
 * Análisis y diseño de los procesos con sus respectivos screen simulando el  funcionamiento del manual de usuario utilizado como caso. 
 
-## 6. Desarrollo
+## 6. Identificación de los Procesos
 
-Constituye la puesta en ejecución de las acciones. 
+Constituye el primer paso de la puesta en ejecución de las acciones. 
 Los instrumentos aprobados por el SERFOR que brindan la trazabilidad de los recursos  forestales maderables a lo largo de la cadena productiva son: 
 
 * a. Plan de manejo forestal 
@@ -57,7 +57,14 @@ Los instrumentos aprobados por el SERFOR que brindan la trazabilidad de los recu
 * f. Aplicativo informático para el registro de información y reportes del Libro de operaciones  de centros de transformación primaria de productos y subproductos forestales  maderables. 
 * g. Aplicativos informáticos para la emisión y registro de GTF de títulos habilitantes y centros  de transformación primaria. 
 
-Utilizando el software Processmaker, información disponible del MC-SNIFF, entrevistas a los especialistas forestales, etc se desarrollaron 6 procesos para conocer el funcionamiento de las  actividades de la trazabilidad de la madera en un entorno de modelo de negocio BPM la cual se  ve reflejada en el siguiente gráfico: 
+Utilizando el software ProcessMaker, información disponible del MC-SNIFF, entrevistas a los especialistas forestales, etc se desarrollaron 6 procesos para conocer el funcionamiento de las  actividades de la trazabilidad de la madera en un entorno de modelo de negocio BPM la cual se ve reflejada en el siguiente gráfico: 
+
+{{< image-resize "/assets/post20220803-1y2/art1-01-lista-procesos-relacionado-trazabilidad.png" 700x >}}
+{{< rawhtml >}}
+<i><center>
+Gráfico 1: Lista de procesos relacionados a la trazabilidad de la recursos forestales maderables.
+</center></i>
+{{</ rawhtml >}}
 
 * a. Proceso 1: A1-Cadena Productiva-Madera-ctc 
 * b. Proceso 2: A2-Documentos de Gestión-Autoridad-ctc 

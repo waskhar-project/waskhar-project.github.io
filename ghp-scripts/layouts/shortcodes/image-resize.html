@@ -11,9 +11,10 @@
 
         <a href="{{ $original.RelPermalink }}">
             <img 
-                style="float: left; margin-right: 1%; margin-bottom: 0.5em; max-width: 100%; width: auto; height: auto;" 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
                 src="{{ .RelPermalink }}" 
-                width="{{ .Width }}" height="{{ .Height }}" 
+                width="{{ .Width }}" 
+                height="{{ .Height }}" 
                 alt="{{ $imgCaption }}">
         </a>
 

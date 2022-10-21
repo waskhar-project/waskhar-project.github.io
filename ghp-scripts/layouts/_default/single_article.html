@@ -4,33 +4,46 @@
   <!-- h1 title added -->
   <h1 class="posttitle" itemprop="name headline"> {{ .Title }} </h1>
 
-  <ul class="post-list">  
-      <li class="post-item">
-        <div class="meta">
-          <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
-        </div>
-        <span>    
-          
-          {{ if gt .Params.categories 0 }}
-          <div class="article-category">
-              {{ range $index, $value := .Params.categories }}
-              {{ if gt $index 0 }} {{ print "·" }} {{ end }}
-              <a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $value | urlize }}">{{ $value }}</a>
-              {{ end }}
-          </div>
+  <div class="meta">
+    <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
+
+    {{ if gt .Params.authors 0 }}
+    ·
+    <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        By 
+        {{ range $index, $value := .Params.authors }}
+        {{ if gt $index 0 }} {{ print "," }} {{ end }}
+          {{ $value }}
+        {{ end }}
+      </span>
+    </span>
+    {{ end }}
+
+    <div>
+
+      {{ if gt .Params.categories 0 }}
+      <!--div class="article-category"-->
+      <div>
+        <i class="fas fa-archive"></i>
+          {{ range $index, $value := .Params.categories }}
+          {{ if gt $index 0 }} {{ print "·" }} {{ end }}
+          <a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $value | urlize }}">{{ $value }}</a>
           {{ end }}
-          {{ if gt .Params.tags 0 }}
-          <div class="article-tag">
-              {{ range $index, $value := .Params.tags }}
-              {{ if gt $index 0 }} {{ print "·" }} {{ end }}
-              <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ $value | urlize }}" rel="tag">{{ $value }}</a>
-              {{ end }}
-          </div>
+      </div>
+      {{ end }}
+      {{ if gt .Params.tags 0 }}
+      <div class="article-tag">
+          {{ range $index, $value := .Params.tags }}
+          {{ if gt $index 0 }} {{ print "·" }} {{ end }}
+          <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ $value | urlize }}" rel="tag">{{ $value }}</a>
           {{ end }}
-  
-        </span>
-      </li>  
-    </ul>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+
 
   <div class="content" itemprop="articleBody">
   {{ if (eq .Type "search") }}

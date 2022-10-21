@@ -2,18 +2,23 @@
 title: "El Proyecto Waskhar"
 date: 2022-08-01T18:49:40+02:00
 draft: false
+authors: ["Carlos Ticla", "Guido Portalanza", "Roger Carhuatocto"]
 #type: post
 layout: single_article
-categories: [Blockchain, Traceability]
+categories: [Blockchain, Traceability, Illegal Logging]
 url: /2022/08/01/el-proyecto-waskhar
 aliases: 
    - /2022/08/01/the-waskhar-project
 ---
 
-> "Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain."
+> "Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Explotación de Madera de la Amazonía Peruana usando Blockchain."
 
-![](/media/assets/post20221001/waskhar-logo-3-knots-color.png)
-_Palabra Quechua que significa 'Cadena o cuerda o soga dura, difícil de romper.'_
+{{< image-resize "/assets/post20220801/waskhar-logo-3-knots-color.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Palabra Quechua que significa 'Cadena, cuerda o soga dura, difícil de romper.'
+</center></i>
+{{</ rawhtml >}}
 
 ## 1. Resumen ejecutivo
 
@@ -66,8 +71,13 @@ __3.1. Arquitectura de alto nivel__
 
 Nuestra propuesta no pretende implementar las 4 capas representadas arriba; considerar este como una referencia o mapa de alto nivel que ayuda a entender dónde estará, o debería estar, situado el adaptador blockchain y el middleware.
 
-![](/media/assets/post20221001/waskhar-arch-01.png)
-_Arquitectura de alto nivel de la solución propuesta_
+{{< image-resize "/assets/post20220801/waskhar-arch-01.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Arquitectura de alto nivel de la solución propuesta
+</center></i>
+{{</ rawhtml >}}
+
 
 A continuación describiremos cada una de las capas y sus componentes presentes en la arquitectura:   
 
@@ -92,19 +102,31 @@ __IV. Proceso Físico (Cadena de Suministro)__
 
 Representa el proceso seguido por todos los actores involucrados en la cadena de suministro de los recursos maderables. En el largo plazo, el éxito de este proyecto radica en llevar todas las etapas identificadas en el proceso al mundo digital; concretamente, implementar en el Application Layer dicho proceso de inicio a fin.
 
-![](/media/assets/post20221001/waskhar-arch-02.png)
-_Diagrama de transición entre capas_
+{{< image-resize "/assets/post20220801/waskhar-arch-02.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Diagrama de transición entre capas
+</center></i>
+{{</ rawhtml >}}
 
 __3.2. Arquitectura de bajo nivel__
 
 Representaremos las especificaciones técnicas del adaptador blockchain, el middleware y cómo éste se integrará con la capa de aplicaciones de negocio (SNIFFS y otros).
 
-![](/media/assets/post20221001/waskhar-arch-03.png)
-_Diagrama de interacciones_
+{{< image-resize "/assets/post20220801/waskhar-arch-03.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Diagrama de interacciones
+</center></i>
+{{</ rawhtml >}}
 
 
-![](/media/assets/post20221001/waskhar-arch-04.png)
-_Descripción de las interacciones_
+{{< image-resize "/assets/post20220801/waskhar-arch-04.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Descripción de las interacciones
+</center></i>
+{{</ rawhtml >}}
 
 __3.3. Especificaciones técnicas del Middleware Layer y del Blockchain Adapter__
 
@@ -114,8 +136,14 @@ La escalabilidad de la solución propuesta se alcanzará por los siguientes moti
 * __Disponibilidad__: El Middleware hospedará una o muchas instancias del Blockchain Adapter y que el Middleware debe ser accesible de manera segura a todas las aplicaciones que quieran interactuar con el Blockchain Ledger. 
 Interoperabilidad con Blockchain: La interoperabilidad en el lado de las aplicaciones de negocio es alcanzada gracias al uso de API RESTful y al intercambio de mensajes estructurados en JSON y XML. Mientras que la interoperabilidad en el lado de Blockchain se logra gracias al uso de estándares aceptados en el sector Crypto como ERC-20 (Ethereum Request for Comments #20 para Tokens fungibles) y ERC-721 (para Tokens no fungibles). 
 
-![](/media/assets/post20221001/waskhar-arch-05.png)
-_Escalabilidad de la solución_
+
+{{< image-resize "/assets/post20220801/waskhar-arch-05.png" 410x >}}
+{{< rawhtml >}}
+<i><center>
+Escalabilidad de la solución
+</center></i>
+{{</ rawhtml >}}
+
 
 ## 4. Objetivos del Proyecto
 

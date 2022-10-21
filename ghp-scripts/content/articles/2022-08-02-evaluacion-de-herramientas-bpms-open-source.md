@@ -2,6 +2,7 @@
 title: "Evaluacion de herramientas BPM Open Source"
 date: 2022-08-02T18:51:44+02:00
 draft: false
+authors: ["Roger Carhuatocto"]
 #type: post
 layout: single_article
 categories: [BPM, DApp, Web3]
