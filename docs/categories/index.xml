@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Wed, 03 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BPMN</title>
       <link>https://waskhar-project.github.io/categories/bpmn/</link>
-      <pubDate>Wed, 03 Aug 2022 10:50:40 +0200</pubDate>
+      <pubDate>Thu, 04 Aug 2022 10:50:40 +0200</pubDate>
       
       <guid>https://waskhar-project.github.io/categories/bpmn/</guid>
       <description></description>
@@ -20,7 +20,7 @@
     <item>
       <title>Process Modeling</title>
       <link>https://waskhar-project.github.io/categories/process-modeling/</link>
-      <pubDate>Wed, 03 Aug 2022 10:50:40 +0200</pubDate>
+      <pubDate>Thu, 04 Aug 2022 10:50:40 +0200</pubDate>
       
       <guid>https://waskhar-project.github.io/categories/process-modeling/</guid>
       <description></description>
@@ -59,6 +59,15 @@
       <pubDate>Mon, 01 Aug 2022 18:49:40 +0200</pubDate>
       
       <guid>https://waskhar-project.github.io/categories/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Illegal Logging</title>
+      <link>https://waskhar-project.github.io/categories/illegal-logging/</link>
+      <pubDate>Mon, 01 Aug 2022 18:49:40 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/categories/illegal-logging/</guid>
       <description></description>
     </item>
     

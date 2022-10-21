@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roger Carhuatocto on Waskhar Project</title>
+    <link>https://waskhar-project.github.io/authors/roger-carhuatocto/</link>
+    <description>Recent content in Roger Carhuatocto on Waskhar Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Waskhar Project</copyright>
+    <lastBuildDate>Tue, 02 Aug 2022 18:51:44 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/authors/roger-carhuatocto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evaluacion de herramientas BPM Open Source</title>
+      <link>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</link>
+      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</guid>
+      <description>Qué es BPM, BPMS y BPMN De acuerdo a Wikipedia, BPM (Business Process Management o Gestión de Procesos de Negocio) es una disciplina de gestión que tiene por objetivo mejorar el desempeño y la optimización de los procesos de una organización. Esto se alcanza siguiendo las etapas: (1) diseñar, (2) modelar, (3) organizar, (4) documentar y (5) optimizar de manera contínua.
+BPMS son las siglas de Business Process Management System, y es una herramienta que automatiza el BPM y asiste en todas sus etapas.</description>
+    </item>
+    
+    <item>
+      <title>El Proyecto Waskhar</title>
+      <link>https://waskhar-project.github.io/2022/08/01/el-proyecto-waskhar/</link>
+      <pubDate>Mon, 01 Aug 2022 18:49:40 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/01/el-proyecto-waskhar/</guid>
+      <description>&amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Explotación de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
+Palabra Quechua que significa &#39;Cadena, cuerda o soga dura, difícil de romper.&#39; 1. Resumen ejecutivo La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
+    </item>
+    
+  </channel>
+</rss>

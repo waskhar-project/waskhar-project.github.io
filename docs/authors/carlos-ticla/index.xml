@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lista de Artículos on Waskhar Project</title>
-    <link>https://waskhar-project.github.io/articles/</link>
-    <description>Recent content in Lista de Artículos on Waskhar Project</description>
+    <title>Carlos Ticla on Waskhar Project</title>
+    <link>https://waskhar-project.github.io/authors/carlos-ticla/</link>
+    <description>Recent content in Carlos Ticla on Waskhar Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/authors/carlos-ticla/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte II</title>
       <link>https://waskhar-project.github.io/2022/08/04/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-2/</link>
@@ -27,16 +27,6 @@ Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la A
       <guid>https://waskhar-project.github.io/2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1/</guid>
       <description>1. Objetivo Realizaremos un análisis al detalle de los procesos de explotación de la madera elaborados y diseñados con la herramienta BPM que nos permitirá identificar las actividades o procedimientos críticos y relacionarla con la tecnología Blockchain para garantizar la trazabilidad.
 2. Abreviaturas MINAGRI : Ministerio de Agricultura y Riego SERFOR : Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM : Business Process Management en inglés o Gestión de Procesos de Negocio GTF : Guia de Transporte Forestal ARFFS : Autoridad Regional Forestal y de Fauna Silvestre ARF : Autoridad Regional Forestal PO : Plan Operativo PMFI : Plan de Manejo Forestal Intermedio DEMA : Lineamientos para la elaboración de la Declaración de Manejo CTP : Centros de Transformación Primaria RUC : Registro Único de Contribuyentes 3.</description>
-    </item>
-    
-    <item>
-      <title>Evaluacion de herramientas BPM Open Source</title>
-      <link>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</link>
-      <pubDate>Tue, 02 Aug 2022 18:51:44 +0200</pubDate>
-      
-      <guid>https://waskhar-project.github.io/2022/08/02/evaluacion-de-herramientas-bpm-open-source/</guid>
-      <description>Qué es BPM, BPMS y BPMN De acuerdo a Wikipedia, BPM (Business Process Management o Gestión de Procesos de Negocio) es una disciplina de gestión que tiene por objetivo mejorar el desempeño y la optimización de los procesos de una organización. Esto se alcanza siguiendo las etapas: (1) diseñar, (2) modelar, (3) organizar, (4) documentar y (5) optimizar de manera contínua.
-BPMS son las siglas de Business Process Management System, y es una herramienta que automatiza el BPM y asiste en todas sus etapas.</description>
     </item>
     
     <item>

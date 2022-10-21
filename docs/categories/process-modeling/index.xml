@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Wed, 03 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/process-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/categories/process-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte II</title>
+      <link>https://waskhar-project.github.io/2022/08/04/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-2/</link>
+      <pubDate>Thu, 04 Aug 2022 10:50:40 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/04/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-2/</guid>
+      <description>Para conocer el objeto y el contexto sobre la explotación de los recursos maderables, te recomendamos revisar la primera parte del artículo.
+Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I
+7. Modelado y análisis de los Procesos Tener en cuenta que para el modelado se uso ProcessMaker como solución BPMS y se siguió el lenguaje BPMN 2.0. A continuación explicamos el desarrollo y análisis de cada uno de los procesos antes identificado.</description>
+    </item>
+    
     <item>
       <title>Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I</title>
       <link>https://waskhar-project.github.io/2022/08/03/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-1/</link>

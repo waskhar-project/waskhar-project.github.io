@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Wed, 03 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taxonomy</title>
       <link>https://waskhar-project.github.io/taxonomy/</link>
@@ -25,6 +25,17 @@
       <guid>https://waskhar-project.github.io/about/</guid>
       <description>Sobre el Proyecto &amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
 La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
+    </item>
+    
+    <item>
+      <title>Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte II</title>
+      <link>https://waskhar-project.github.io/2022/08/04/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-2/</link>
+      <pubDate>Thu, 04 Aug 2022 10:50:40 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/04/modelando-procesos-explotacion-recursos-maderables-amazonia-bpmn-2/</guid>
+      <description>Para conocer el objeto y el contexto sobre la explotación de los recursos maderables, te recomendamos revisar la primera parte del artículo.
+Modelado BPMN 2.0 de los Procesos de Explotación de Recursos Maderables en la Amazonía Peruana - Parte I
+7. Modelado y análisis de los Procesos Tener en cuenta que para el modelado se uso ProcessMaker como solución BPMS y se siguió el lenguaje BPMN 2.0. A continuación explicamos el desarrollo y análisis de cada uno de los procesos antes identificado.</description>
     </item>
     
     <item>
@@ -53,9 +64,8 @@ BPMS son las siglas de Business Process Management System, y es una herramienta 
       <pubDate>Mon, 01 Aug 2022 18:49:40 +0200</pubDate>
       
       <guid>https://waskhar-project.github.io/2022/08/01/el-proyecto-waskhar/</guid>
-      <description>&amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
-Palabra Quechua que significa &amp;lsquo;Cadena o cuerda o soga dura, difícil de romper.&amp;rsquo;
-1. Resumen ejecutivo La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
+      <description>&amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Explotación de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
+Palabra Quechua que significa &#39;Cadena, cuerda o soga dura, difícil de romper.&#39; 1. Resumen ejecutivo La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
     </item>
     
   </channel>
