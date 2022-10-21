@@ -178,7 +178,7 @@ Sobre la Madera Aserrada en Bosque: Para guías que cuenten con madera aserrada 
 - Elaborar Declaración Jurada (DJ) de Volúmenes Movilizados para cuando se desee regularizar  los saldos a los títulos habilitantes. Existirán casos en que los titulares ya hayan iniciado  operaciones antes del uso del sistema y se deberá seleccionar la resolución de plan operativo. 
 - Crear Plantilla de Excel que será usada cuando el usuario desee trabajar desde un archivo  excel la lista de trozas, esto facilitará la creación de la mencionada lista de trozas.
 
-{{< image-resize "/assets/post20220803-1y2/art1-06-proceso-g1-registro-guia-transporte-forestal-estado-natural.png" 400x >}}
+{{< image-resize "/assets/post20220803-1y2/art1-06-proceso-g1-registro-guia-transporte-forestal-estado-natural.png" 401x >}}
 {{< rawhtml >}}
 <i><center>
 Gráfico 6: Registro Guía de Transporte Forestal-Estado Natural.
@@ -226,7 +226,7 @@ Otros subprocesos que se estudiarán posteriormente:
 * Registro de Declaración Jurada de inventario de planta de transformación: en esta parte se  podrá visualizar todas las Declaraciones Juradas de Inventario registradas de los Centros de  Transformación Primaria, que servirán para la regularización de saldo actual en la planta.  
 * Registro de Declaración Jurada de volúmenes movilizados: en esta parte se podrá visualizar  todas las Declaraciones Juradas de Volúmenes Movilizados, que servirán para la  regularización de saldo actual del Título Habilitante. Para acceder, ingresar a Registro de  Guías de Transporte Forestal, Registro de Declaración Jurada de Volúmenes Movilizados. 
 
-{{< image-resize "/assets/post20220803-1y2/art1-07-proceso-g2-registro-guia-transporte-forestal-producto-transformado.png" 400x >}}
+{{< image-resize "/assets/post20220803-1y2/art1-07-proceso-g2-registro-guia-transporte-forestal-producto-transformado.png" 401x >}}
 {{< rawhtml >}}
 <i><center>
 Gráfico 7: Registro Guía de Transporte Forestal-Producto Terminado
