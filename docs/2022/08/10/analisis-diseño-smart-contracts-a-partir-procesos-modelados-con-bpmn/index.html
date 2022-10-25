@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0 | Waskhar Project</title>
+  <link rel = 'canonical' href = 'https://waskhar-project.github.io/2022/08/10/analisis-dise%C3%B1o-smart-contracts-a-partir-procesos-modelados-con-bpmn/'>
+  <meta name="description" content="Proyecto de digitalización y mejora de la trazabilidad a lo largo de la cadena de suministro de la Madera en la Amazonía Peruana usando Blockchain.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0" />
+<meta property="og:description" content="1. Objetivo Identificar los puntos (actividades) en los procesos de negocio que fueron modelados que son susceptibles de ser integrados o que requieren guardar información transaccional en la Red Blockchain.
+2. Abreviaturas MINAGRI: Ministerio de Agricultura y Riego SERFOR: Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM: Business Process Management en inglés o Gestión de Procesos de Negocio GTF: Guia de Transporte Forestal ARFFS: Autoridad Regional Forestal y de Fauna Silvestre ARF: Autoridad Regional Forestal PO: Plan Operativo PMFI: Plan de Manejo Forestal Intermedio DEMA: Lineamientos para la elaboración de la Declaración de Manejo CTP: Centros de Transformación Primaria RUC: Registro Único de Contribuyentes 3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://waskhar-project.github.io/2022/08/10/analisis-dise%C3%B1o-smart-contracts-a-partir-procesos-modelados-con-bpmn/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2022-08-10T10:50:40+02:00" />
+<meta property="article:modified_time" content="2022-08-10T10:50:40+02:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0"/>
+<meta name="twitter:description" content="1. Objetivo Identificar los puntos (actividades) en los procesos de negocio que fueron modelados que son susceptibles de ser integrados o que requieren guardar información transaccional en la Red Blockchain.
+2. Abreviaturas MINAGRI: Ministerio de Agricultura y Riego SERFOR: Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM: Business Process Management en inglés o Gestión de Procesos de Negocio GTF: Guia de Transporte Forestal ARFFS: Autoridad Regional Forestal y de Fauna Silvestre ARF: Autoridad Regional Forestal PO: Plan Operativo PMFI: Plan de Manejo Forestal Intermedio DEMA: Lineamientos para la elaboración de la Declaración de Manejo CTP: Centros de Transformación Primaria RUC: Registro Único de Contribuyentes 3."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://waskhar-project.github.io/css/styles.4c2b9aa1d874d6766f554b2d404e8fd62ab4761f51ee9b3f358d12e81e7fa43a1b4378db995bc1926bbe5ed98c060be5e7bd4f2470504cf94f22b4b3a74e62b6.css" integrity="sha512-TCuaodh01nZvVUstQE6P1iq0dh9R7ps/NY0S6B5/pDobQ3jbmVvBkmu&#43;XtmMBgvl571PJHBQTPlPIrSzp05itg=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://waskhar-project.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+    <header id="header">
+  <a href="https://waskhar-project.github.io/">
+  
+    <div id="logo" style="background-image: url(https://waskhar-project.github.io/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Waskhar Project</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/articles">Articles</a></li>
+      
+        <li><a href="/taxonomy">Taxonomy</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  
+  <h1 class="posttitle" itemprop="name headline"> Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0 </h1>
+
+  <div class="meta">
+    <time datetime="2022-08-10 10:50:40 &#43;0200 CEST" itemprop="datePublished">2022-08-10</time>
+
+    
+    ·
+    <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        Por 
+        
+        
+          Carlos Ticla
+        
+      </span>
+    </span>
+    
+
+    <div>
+
+      
+      
+      <div>
+        <i class="fas fa-archive"></i>
+          
+          
+          <a class="category-link" href="/categories/bpmn">BPMN</a>
+          
+           · 
+          <a class="category-link" href="/categories/process-modeling">Process Modeling</a>
+          
+           · 
+          <a class="category-link" href="/categories/smart-contract">Smart Contract</a>
+          
+      </div>
+      
+      
+    </div>
+
+  </div>
+
+
+  <div class="content" itemprop="articleBody">
+  
+    <h2 id="1-objetivo">1. Objetivo</h2>
+<p>Identificar los puntos (actividades) en los procesos de negocio que fueron modelados que son susceptibles de ser integrados o que requieren guardar información transaccional en la Red Blockchain.</p>
+<h2 id="2-abreviaturas">2. Abreviaturas</h2>
+<ul>
+<li>MINAGRI: Ministerio de Agricultura y Riego</li>
+<li>SERFOR: Servicio Nacional Forestal y de Fauna Silvestre</li>
+<li>MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre</li>
+<li>BPM: Business Process Management en inglés o Gestión de Procesos de Negocio</li>
+<li>GTF: Guia de Transporte Forestal</li>
+<li>ARFFS: Autoridad Regional Forestal y de Fauna Silvestre</li>
+<li>ARF: Autoridad Regional Forestal</li>
+<li>PO: Plan Operativo</li>
+<li>PMFI: Plan de Manejo Forestal Intermedio</li>
+<li>DEMA: Lineamientos para la elaboración de la Declaración de Manejo</li>
+<li>CTP: Centros de Transformación Primaria</li>
+<li>RUC: Registro Único de Contribuyentes</li>
+</ul>
+<h2 id="3-situación-actual">3. Situación actual</h2>
+<p>El mundo se está digitalizando y con nuevas formas de ver los contratos, los denominados “Smart Contracts” o Contratos Inteligentes que se define como “Programa informático que se programa para que ejecute de forma automática acuerdos que hayan determinado dos o más partes”. En ese sentido, durante el diseño de los procesos de negocio de la explotación de la madera, hemos identificado normas, reglas con una serie de documentos que bien pueden ser considerados como información irrefutable que reforzaría la veracidad de un contrato, además, hemos identificado los actores del procesos, que serían las partes que participarán en la celebración del contrato y así sucesivamente.<br>
+En resumen, después de haber completado el modelado de los procesos de negocio más representativos de la explotación de la madera, y una vez analizado en detalle cada uno de ellos habremos identificado aquellos puntos importantes, sus reglas o normas, los participantes y los documentos o datos intercambiados en ese momento, para luego crear una nueva estructura de datos llamado Smart Contract, que será la que guardará en la Red Blockchain.</p>
+<h2 id="4-problema">4. Problema</h2>
+<p>Desconocemos si las autoridades utilizan para modelar los procesos de negocio BPMN 2.0, ya que ello permitiría una fácil interpretación de lo que pasa en el ciclo de vida de la madera y que nos ayude a identificar esos puntos dentro del proceso susceptibles de ser llevados a la Red Blockchain.
+Como el MC-SNIFFS está aún en proceso de construcción e implementación y SERFOR está tomando acciones iniciales para abordar los temas de trazabilidad de la madera, todo este trabajo presentado en este Proyecto es el resultado de haber revisado aplicaciones legadas, haber revisado documentación pública y de haber asistido a varias reuniones donde se han explicado escenarios similares; por lo cual, es un trabajo que está siendo mejorado y adaptado cada día y puede que lo que hoy estamos añadiendo a la estructura de los Smart Contracts, mañana puede ser que no se considere.</p>
+<h2 id="5-acciones">5. Acciones</h2>
+<p>Hemos modelado todos los procesos con BPMN 2.0 y hemos definido las interfases de interacción humana llamadas SCREENs, gracias a ProcessMaker el modelamiento y la generación de esas interfases no ha sido un trabajo difícil. Los SCREENs nos permite definir la manera más fácil la representación de los documentos, reglas, formularios y estructura de datos que son usados en los procesos de manera real, pero en este caso, estos formularios serán nuestra estructura de datos que son susceptibles de ser registrados en la Red Blockchain.<br>
+Ante ello, las principales acciones adoptadas fueron:</p>
+<ul>
+<li>Análisis al detalle de la información en la web relacionada al Manual de Usuario Sistema de Emisión y Registro de Guías de Transporte.</li>
+<li>Análisis y diseño de los SCREENs con sus respectiva estructura de datos, incluyendo las variables que ProcessMaker requiere.</li>
+</ul>
+<h2 id="6-desarrollo">6. Desarrollo</h2>
+<p>El uso de Blockchain en la trazabilidad de la cadena de explotación, podría permitir un seguimiento exhaustivo e identificación del recurso madera utilizada. Mejor aún, si el sistema de trazabilidad es más completo, preciso y responsable ofrece visibilidad sustancial del producto y ayudaría a que toda la cadena de explotación fuera más congruente, confiable y no repudiable.</p>
+<p>ProcessMaker nos permite incorporar información sobre la estructura de datos a través de los SCREENs y cuáles son los participantes en cada una de las actividades representadas en cualquier proceso. Muchos procesos requieren recopilar el mismo tipo de información, como el nombre y apellido, dirección, correo electrónico, etc. Por lo tanto, los diseñadores de procesos o analistas de negocio pueden crear SCREENs que sólo muestren información relevante a cada acción o actividad, y que finalmente será esa información la que se reflejará en la Red Blockchain a través de los Smart Contracts.</p>
+<p>Asimismo, se puede usar SCREENs de diferentes tipos con visualización que muestre información, descargar archivos, mostrar indicadores clave de rendimiento (KPI) e información de uso común para las partes interesadas.</p>
+<p>Después de emplear ProcessMaker, revisar la información disponible del MC-SNIFF, realizar entrevistas a los especialistas forestales, etc. hemos podido desarrollar 10 SCREENs, estos son:</p>
+<ul>
+<li>SCREEN 1: AS1-Titulares de Título Habilitante</li>
+<li>SCREEN 2: AS2-Crear Nuevo Titular</li>
+<li>SCREEN 3: AS3-Datos Generales</li>
+<li>SCREEN 4: AS4-Plan Operativo</li>
+<li>SCREEN 5: AS5-Establecimientos Registrados</li>
+<li>SCREEN 6: AS6-Nuevo Establecimiento</li>
+<li>SCREEN 7: AS7-GTF-Titulos Habilitantes</li>
+<li>SCREEN 8: AS8-GTF-PO-Planes de Manejo</li>
+<li>SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados</li>
+<li>SCREEN 10: AS91-GTF-Registrar GTF al Estado Natural</li>
+</ul>
+<p>Ahora, el siguiente paso es identificar cuál de estos SCREENs puede ser usado para validar la estrategia de Integración entre procesos modelados BPMN con la Red Blockchain a través de los Smart Contracts.</p>
+<p>En el siguiente gráfico se muestra los 10 SCREENs diseñados con la herramienta ProcessMaker:</p>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf1-lista-screen-relacionados-trazabilidad-recursos-forestales-maderables.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/_huf01b2b40924861008f541d76cb00100a_115404_e033ad5ac38061cee3757fe6fb0b6afd.png" 
+                width="400" 
+                height="200" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 1: Lista de SCREENs identificados en los procesos de explotación de recursos maderables modelados con BPMN 2.0.
+</center></i>
+
+</p>
+<h3 id="61-screen-1-as1-titulares-de-titulo-habilitante">6.1. SCREEN 1: AS1-Titulares de Titulo Habilitante</h3>
+<p>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+     
+ 
+         <a href="/media/assets/post20220810_art02/art2-graf2-screen1-as1-titulares-de-%20titulo-habilitante.png">
+             <img 
+                 style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                 src="/media/assets/post20220810_art02/art2-graf2-screen1-as1-titulares-de-%20titulo-habilitante_huc507701fee34e73c93ac22a248735aa7_28700_400x0_resize_box_3.png" 
+                 width="400" 
+                 height="171" 
+                 alt="">
+         </a>
+ 
+     
+
+
+
+<i><center>
+Gráfico 2: Diseño del SCREEN 1: AS1-Titulares de Título Habilitante.
+</center></i>
+
+</p>
+<blockquote>
+<p>Es un buscador que ubica a titulares de titulo habilitante que se encuentran registrados con sus datos como ruc, domicilio fiscal, departamento, provincia, distrito, título obtenido, modalidad de otorgamiento, fecha de inicio y final, área otorgada, ubicación, representante legal y estado situacional.
+Se han elaborado 17 variables y label relacionados a sus nombres.</p>
+</blockquote>
+<h3 id="62-screen-2-as2-crear-nuevo-titular">6.2. SCREEN 2: AS2-Crear Nuevo Titular</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf3-screen2-as2-crear-nuevo-titular.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf3-screen2-as2-crear-nuevo-titular_huc4bb60880985a4c9f99a345a5a3e8346_26058_400x0_resize_box_3.png" 
+                width="400" 
+                height="266" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 3: Diseño del SCREEN 2: AS2-Crear Nuevo Titular.
+</center></i>
+
+</p>
+<blockquote>
+<p>Crea nuevos titulares de título habilitante que no se encuentran registrados. Desarrolla registro de datos como razón social, email, teléfono, rubro, giro, domicilio fiscal, departamento, provincia, distrito. Datos del representante legal. Asimismo, se elaboraron 13 variables para el titular y 12 variables para el representante legal.</p>
+</blockquote>
+<h3 id="63-screen-3-as3-datos-generales">6.3. SCREEN 3: AS3-Datos Generales</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf4-screen3-as3-datos-generales.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf4-screen3-as3-datos-generales_hu6ba74de749295a5c7df4ebc52956974e_36975_400x0_resize_box_3.png" 
+                width="400" 
+                height="299" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 4: Diseño del SCREEN 3: AS3-Datos Generales.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN edita los datos generales número de título, contrato, permiso o autorización, ruc, nombre o razón social, modalidad de otorgamiento, actividad, propietario de la tierra, fecha de firma, fecha de vigencia. Datos de la ubicación del título habilitante y representante legal. Se ha desarrollado 23 variables.</p>
+</blockquote>
+<h3 id="64-screen-4-as4-plan-operativo">6.4. SCREEN 4: AS4-Plan Operativo</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf5-screen4-as4-plan-operativo.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf5-screen4-as4-plan-operativo_hu371bfc607e39360b94f32017afd195be_23245_400x0_resize_box_3.png" 
+                width="400" 
+                height="172" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 5: Diseño del SCREEN 4: AS4-Plan Operativo.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN registra datos del plan operativo: número de contrato, número de plan operativo, resolución, tipo de recurso, fecha de expediente, fecha de zafras, parcela de corte, área a aprovechar.
+Registra datos del regente autorizado para elaborar el plan operativo, número de licencia y estado situacional de la licencia.
+Se ha desarrollado 18 variables.</p>
+</blockquote>
+<h3 id="65-screen-5-as5-establecimientos-registrados">6.5. SCREEN 5: AS5-Establecimientos Registrados</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf6-screen5-as5-establecimientos-registrados.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf6-screen5-as5-establecimientos-registrados_hucb9e94af1ee323224e7d85fee62f1d4e_18949_400x0_resize_box_3.png" 
+                width="400" 
+                height="137" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 6: Diseño del SCREEN 5: AS5-Establecimientos Registrados.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN es un buscador de los establecimientos registrados con el número, tipo, ruc, nombre y número de establecimiento, dirección, departamento, número de resolución, fecha de vencimiento y estado.
+Asimismo, se ha desarrollado 12 variables con sus respectivos nombres.</p>
+</blockquote>
+<h3 id="66-screen-6-as6-nuevo-establecimiento">6.6. SCREEN 6: AS6-Nuevo Establecimiento</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf7-screen6-as6-nuevo-establecimiento.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf7-screen6-as6-nuevo-establecimiento_hu1b7a69d8629a14d051e7057aad97c2e8_36152_400x0_resize_box_3.png" 
+                width="400" 
+                height="313" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 7: Diseño del SCREEN 6: AS6-Nuevo Establecimiento.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN registra los nuevos establecimientos como ruc, número asignado, nombre del representante legal, dirección con validación por Sunat. Referencias de la ubicación, coordenadas geográficas, departamento, provincia, distrito. Datos de la autorización o permiso de funcionamiento. Se ha desarrollado 21 variables con sus respectivos nombres.</p>
+</blockquote>
+<h3 id="67-screen-7-as7-gtf-titulos-habilitantes">6.7. SCREEN 7: AS7-GTF-Titulos Habilitantes</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf8-screen7-as7-gtf-titulos-habilitantes.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf8-screen7-as7-gtf-titulos-habilitantes_hue2466b1f9b168b404348e37163116206_14280_400x0_resize_box_3.png" 
+                width="400" 
+                height="93" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 8: Diseño del SCREEN 7: AS7-GTF-Titulos Habilitantes.
+</center></i>
+
+</p>
+<blockquote>
+<p>Es un buscador los títulos habilitantes mediante Nro de ruc, razón social del titular o número del título habilitante esto permite obtener el Nro título habilitante, ruc del titular, razón social y la vigencia de inicio y fin. Se han desarrollado 06 variables con sus respectivos nombres.</p>
+</blockquote>
+<h3 id="68-screen-8-as8-gtf-po-planes-de-manejo">6.8. SCREEN 8: AS8-GTF-PO-Planes de Manejo</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf9-screen8-as8-gtf-po-planes-manejo.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/art2-graf9-screen8-as8-gtf-po-planes-manejo_hu0c29b0890a3ebc55eb75457e509dcd73_25361_400x0_resize_box_3.png" 
+                width="400" 
+                height="171" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 9: Diseño del SCREEN 8: AS8-GTF-PO-Planes de Manejo.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN ubica los planes de manejo mediante la búsqueda de los títulos habilitantes que se encuentran registrados con ruc, razón social o número de TH.
+Reporta los Nro de plan operativo, Nro de resolución, zafra, fecha de inicio, fecha final, parcela, área asignada, tipo de plan, plan ID, estado situacional. Se han desarrollado 16 variables con sus respectivos nombres.</p>
+</blockquote>
+<h3 id="69-screen-9-as9-gtf-especies-y-volúmenes-aprobados">6.9. SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf10-screen9-as9-gtf-especies-volumenes%20-aprobados.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/_hu9353a1960a394e059ff5dbcb2f75b98d_27507_206bcf48b09b056488013a977a878e23.png" 
+                width="400" 
+                height="168" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 10: Diseño del SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN ubica las especies y volúmenes aprobados mediante la búsqueda de los títulos habilitantes que se encuentran registrados con datos como ruc o razón social o Nro de TH. Se generan los datos de los planes de manejo con las especies y volúmenes autorizados del plan aprobado con zafra, descripción, nombre científico, árboles, volumen autorizado, unidad métrica, volumen movilizado, saldo, fecha del último movimiento. Se ha desarrollado 16 variables con sus respectivos nombres.</p>
+</blockquote>
+<h3 id="610-screen-10-as91-gtf-registrar-gtf-al-estado-natural">6.10. SCREEN 10: AS91-GTF-Registrar GTF al Estado Natural</h3>
+<p>
+
+
+
+
+
+
+
+    
+    
+
+        <a href="/media/assets/post20220810_art02/art2-graf11-screen10-as91-gtf-registrar-gtf-estado-natural.png">
+            <img 
+                style="display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;" 
+                src="/media/assets/post20220810_art02/_hub0cb7916d8e8b01e0086bdede7699f10_18735_3c0b1d32ce6771a055fcf5d55e61848a.png" 
+                width="400" 
+                height="126" 
+                alt="">
+        </a>
+
+    
+
+
+
+<i><center>
+Gráfico 11: Diseño del SCREEN 10: AS91-GTF-Registrar GTF al Estado Natural.
+</center></i>
+
+</p>
+<blockquote>
+<p>Este SCREEN es el más importante pues es la información que registra la guía de transporte forestal al estado natural con mayor detalle. Se desarrollan 16 variables con sus respectivos nombres. A continuación se explica la secuencia de información muy relevante para la elaboración del Smart Contract.</p>
+</blockquote>
+<p>Por la relevancia e importancia del documento “Registrar la Guía de Transporte Forestal (GTF) al estado natural” y al revisar todas las actividades del proceso, creemos que es el SCREEN candidato más apropiado a ser considerarlo como la estructura de datos base para el diseño del Smart Contract clave para la integración con la Red Blockchain.<br>
+El registro de Guías de Transporte Forestal sirve para el ingreso de guías manuales emitidas previamente. Para acceder se deberá seguir con los siguientes pasos:</p>
+<ul>
+<li>Seleccionar la resolución del plan y registrar GTF al E. Natural.</li>
+<li>Se mostrará que debe ingresar el número de GTF a registrar, para verificar que no se haya registrado previamente.</li>
+<li>Se verificará y validará si ya está registrada la GTF.</li>
+<li>Si la validación no está registrada, se procederá con el registro de la GTF.</li>
+<li>El sistema mostrará que se deberá seleccionar la especie a movilizar.</li>
+<li>Se visualizará las trozas que fueron agregadas, donde se deberá ingresar el código de la troza, el D1 (siempre será el diámetro mayor), D2 y el largo.</li>
+<li>Ingresar a datos de la Guía de Transporte Forestal, se deberá ingresar todos los datos:
+<ul>
+<li>Fecha de emisión y vencimiento: fechas que fueron detalladas en la GTF Manual.</li>
+<li>Propietario del producto: este podrá ser el mismo Titular, se deberá dar Propietario es el titular, en caso este propietario no figure en la lista del sistema. Se podrá ingresar los datos del propietario, el cual deberá ser validado con SUNAT o RENIEC.</li>
+<li>Tipo de comprobante: en esta lista se deberá seleccionar de manera obligatoria entre Boleta y Factura como medio que comprueba la transacción económica en la compra de la madera movilizada e ingresar el número de este documento. Solo en casos en que, el mismo titular movilice la madera podrá seleccionar No Aplica.</li>
+<li>Destinatario: en esta lista se deberá seleccionar al CTP o Depósito al cual irá la madera, cabe señalar que estos deben estar registrados previamente en el sistema.</li>
+<li>Transportista: seleccionar al conductor que transportará la madera, en caso este no figure en la lista se podrá agregar a la lista. En esta ventana se podrá ingresar los datos del conductor, el cual deberá ser validado con RENIEC.</li>
+<li>Luego de haber ingresado todos los datos solicitados se graba el Registro.</li>
+</ul>
+</li>
+</ul>
+<p>El sistema pedirá confirmar que se mantengan los datos de la lista registrada previamente, esto es con la finalidad de poder usar posteriormente los datos de la lista de trozas previamente generada.</p>
+<h2 id="7-conclusiones">7. Conclusiones</h2>
+<p>De los 10 SCREENs que forman parte de los procesos elaborados el más apropiado por el grado de importancia y relevancia es el ”registro de la guía de transporte forestal al estado natural” pues presenta información sobre fechas de emisión y vencimiento, propietario del producto, tipo de comprobante, destinatario y transportista que están relacionadas a la madera movilizada incluso en trozas y resolución del plan operativo de procedencia pues a través de este último registro responde una de las preguntas de investigación que era identificar a la autoridad forestal que autorizo y firmo dicho expediente.</p>
+
+  
+  </div>
+</article>
+
+
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Waskhar Project 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/articles">Articles</a></li>
+         
+        <li><a href="/taxonomy">Taxonomy</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+</html>

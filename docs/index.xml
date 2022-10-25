@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Waskhar Project</copyright>
-    <lastBuildDate>Thu, 04 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 10:50:40 +0200</lastBuildDate><atom:link href="https://waskhar-project.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taxonomy</title>
       <link>https://waskhar-project.github.io/taxonomy/</link>
@@ -25,6 +25,16 @@
       <guid>https://waskhar-project.github.io/about/</guid>
       <description>Sobre el Proyecto &amp;ldquo;Digitalización y mejora de la Trazabilidad a lo largo de la Cadena de Suministro de Madera de la Amazonía Peruana usando Blockchain.&amp;rdquo;
 La cadena de suministro de madera es vulnerable a la ilegalidad y corrupción. Los agentes activos son mayormente organizaciones nacionales e internacionales que aprovechan la amplia informalidad, limitada capacidad de control y sanción, deficiente articulación e incompleta información, poca tecnificación de los procesos, entre muchos otros factores.</description>
+    </item>
+    
+    <item>
+      <title>Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0</title>
+      <link>https://waskhar-project.github.io/2022/08/10/analisis-dise%C3%B1o-smart-contracts-a-partir-procesos-modelados-con-bpmn/</link>
+      <pubDate>Wed, 10 Aug 2022 10:50:40 +0200</pubDate>
+      
+      <guid>https://waskhar-project.github.io/2022/08/10/analisis-dise%C3%B1o-smart-contracts-a-partir-procesos-modelados-con-bpmn/</guid>
+      <description>1. Objetivo Identificar los puntos (actividades) en los procesos de negocio que fueron modelados que son susceptibles de ser integrados o que requieren guardar información transaccional en la Red Blockchain.
+2. Abreviaturas MINAGRI: Ministerio de Agricultura y Riego SERFOR: Servicio Nacional Forestal y de Fauna Silvestre MC-SNIFFS: Módulo de Control del Sistema Nacional Información Forestal y de Fauna Silvestre BPM: Business Process Management en inglés o Gestión de Procesos de Negocio GTF: Guia de Transporte Forestal ARFFS: Autoridad Regional Forestal y de Fauna Silvestre ARF: Autoridad Regional Forestal PO: Plan Operativo PMFI: Plan de Manejo Forestal Intermedio DEMA: Lineamientos para la elaboración de la Declaración de Manejo CTP: Centros de Transformación Primaria RUC: Registro Único de Contribuyentes 3.</description>
     </item>
     
     <item>
