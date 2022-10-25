@@ -171,7 +171,7 @@ Reporta los Nro de plan operativo, Nro de resolución, zafra, fecha de inicio, f
 
 ### 6.9. SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados
  
-{{< image-resize "/assets/post20220810_art02/art2-graf10-screen9-as9-gtf-especies-volumenes -aprobados.png" 400x >}}
+{{< image-resize "/assets/post20220810_art02/art2-graf10-screen9-as9-gtf-especies-vol-aprob.png" 400x >}}
 {{< rawhtml >}}
 <i><center>
 Gráfico 10: Diseño del SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados.
@@ -182,7 +182,7 @@ Gráfico 10: Diseño del SCREEN 9: AS9-GTF-Especies y Volúmenes Aprobados.
 
 ### 6.10. SCREEN 10: AS91-GTF-Registrar GTF al Estado Natural
  
-{{< image-resize "/assets/post20220810_art02/art2-graf11-screen10-as91-gtf-registrar-gtf-estado-natural.png" 400x >}}
+{{< image-resize "/assets/post20220810_art02/art2-graf11-screen10-as91-gtf-reg-estado-nat.png" 400x >}}
 {{< rawhtml >}}
 <i><center>
 Gráfico 11: Diseño del SCREEN 10: AS91-GTF-Registrar GTF al Estado Natural.
