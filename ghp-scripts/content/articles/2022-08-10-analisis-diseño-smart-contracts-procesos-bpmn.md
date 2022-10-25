@@ -69,7 +69,7 @@ Ahora, el siguiente paso es identificar cuál de estos SCREENs puede ser usado p
 
 En el siguiente gráfico se muestra los 10 SCREENs diseñados con la herramienta ProcessMaker:
 
-{{< image-resize "/assets/post20220810_art02/art2-graf1-lista-screen-relacionados-trazabilidad-recursos-forestales-maderables.png" 400x >}}
+{{< image-resize "/assets/post20220810_art02/art2-graf1-lista-processmaker-screens.png" 400x >}}
 {{< rawhtml >}}
 <i><center>
 Gráfico 1: Lista de SCREENs identificados en los procesos de explotación de recursos maderables modelados con BPMN 2.0.
