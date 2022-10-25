@@ -1,5 +1,5 @@
 ---
-title: "Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN 2.0"
+title: "Análisis y diseño de Smart Contracts a partir de los procesos modelados con BPMN"
 date: 2022-08-10T10:50:40+02:00
 draft: false
 authors: ["Carlos Ticla"]
