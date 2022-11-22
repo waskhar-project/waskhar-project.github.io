@@ -1,4 +1,4 @@
-name: Test PR
+name: Test1
 on: 
   push:
     branches:
@@ -10,9 +10,14 @@ on:
       - 'main'
     paths:
       - '.github/workflows/**'
-
+  pull_request_target:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
+      
 jobs:
-  job_print_some_env_vars:
+  job_print_env_vars:
     runs-on: ubuntu-latest
     steps:
       - name: Print some GH vars
@@ -23,14 +28,8 @@ jobs:
           echo github.head_ref: ${{ github.head_ref }}
           echo github.base_ref: ${{ github.base_ref }}
 
-  job_print_full_env_vars_ubuntu:
-    runs-on: ubuntu-latest
-    steps:
       - name: List ubuntu env vars 
         run: env
 
-  job_print_full_env_vars_github:
-    runs-on: ubuntu-latest
-    steps:
-      - name: List gh env vars 
+      - name: List github env vars 
         run: echo '${{ toJSON(github) }}'
