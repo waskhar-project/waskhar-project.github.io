@@ -19,8 +19,13 @@ jobs:
       - name: List env vars on ubuntu
         run: env
 
-      - name: List context GH vars
-        run: echo $GITHUB_CONTEXT
-
-      - name: List context vars GH with json parsing
+      - name: List context vars
         run: echo '${{ toJSON(github) }}'
+
+      - name: Print GH vars
+        run: |
+          echo $github.event_name
+          echo $github.ref
+          echo $github.ref_name
+          echo $github.head_ref
+          echo $github.base_ref
