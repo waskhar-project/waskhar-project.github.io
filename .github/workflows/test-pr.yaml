@@ -1,0 +1,26 @@
+name: Test PR
+on: 
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
+
+    
+jobs:
+  job_print_env_vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List env vars on ubuntu
+        run: env
+
+      - name: List context GH vars
+        run: echo $GITHUB_CONTEXT
+
+      - name: List context vars GH with json parsing
+        run: echo '${{ toJSON(github) }}'
