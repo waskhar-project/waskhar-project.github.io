@@ -39,7 +39,7 @@ jobs:
         if: |
           github.ref == 'refs/heads/main' || 
           !(startsWith(github.ref, 'refs/pull/') || endsWith(github.ref, '/merge'))
-        run: echo "=> This a PUSH and and ${{ github.ref }}"
+        run: echo "=> This a PUSH and ${{ github.ref }}"
 
       - name: List ubuntu env vars 
         run: env
