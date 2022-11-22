@@ -10,12 +10,12 @@ on:
       - 'main'
     paths:
       - '.github/workflows/**'
-  #### pull_request_target runs 2 times the workflow in PRs from forked repos 
-  # pull_request_target:
-  #   branches:
-  #     - 'main'
-  #   paths:
-  #     - '.github/workflows/**'
+  ### pull_request_target runs 2 times the workflow in PRs from forked repos 
+  pull_request_target:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
 
 jobs:
   job_print_env_variables:
