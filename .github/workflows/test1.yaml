@@ -1,0 +1,48 @@
+name: Test1
+on: 
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/**'
+  #### pull_request_target runs 2 times the workflow in PRs from forked repos 
+  # pull_request_target:
+  #   branches:
+  #     - 'main'
+  #   paths:
+  #     - '.github/workflows/**'
+
+jobs:
+  job_print_env_variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print some github vars
+        run: |
+          echo github.event_name: ${{ github.event_name }}
+          echo github.ref: ${{ github.ref }}
+          echo github.ref_name: ${{ github.ref_name }}
+          echo github.head_ref: ${{ github.head_ref }}
+          echo github.base_ref: ${{ github.base_ref }}
+      
+      - name: Print info if PR
+        if: |
+          github.ref != 'refs/heads/main' && 
+          startsWith(github.ref, 'refs/pull/') && endsWith(github.ref, '/merge') 
+        run: echo "=> This a PULL_REQUEST and ${{ github.ref }}"
+
+      - name: Print info if PUSH
+        if: |
+          github.ref == 'refs/heads/main' || 
+          !(startsWith(github.ref, 'refs/pull/') || endsWith(github.ref, '/merge'))
+        run: echo "=> This a PUSH and and ${{ github.ref }}"
+
+      - name: List ubuntu env vars 
+        run: env
+
+      - name: List github env vars 
+        run: echo '${{ toJSON(github) }}'
